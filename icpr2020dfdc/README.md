@@ -76,7 +76,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
     - For real videos:
         ```sh
-        python process_data/calculate_real_pred_values.py --dataset FF++
+        python3 process_data/calculate_real_pred_values.py --dataset FF++
         ```
         - `--dataset`: Specifies the dataset to process. Use `FF++` or `Celeb-DF`.
           
@@ -84,12 +84,17 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 3. **Process Prediction Values and Compute Metrics**:
     ```sh
-    python evaluate_predictions_with_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions]
+    python3 results/evaluate_predictions_with_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions]
     ```
     - `--threshold`: Threshold value.
-    - `--propThreshold`: Proportional threshold value.
+    - `--propThreshold`: Probability threshold value.
     - `--real_path`: Path to the file with real video predictions.
     - `--fake_path`: Path to the file with fake video predictions.
+
+   **Example Command**
+   ```sh
+   python3 results/evaluate_predictions_with_metrics.py --threshold 0 --propThreshold 0 --real_path ../prediction_real_values_ff++ --fake_path ../prediction_fake_values_ff++
+   ```
 
 4. **View Results**:
     - Evaluation metrics can be found in `results/metrics/results.txt`.
