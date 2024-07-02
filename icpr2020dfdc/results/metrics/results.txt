@@ -1,0 +1,1092 @@
+Threshold: 0.0, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 297
+False Positives (FP): 278
+True Negatives (TN): 507
+False Negatives (FN): 93
+Precision: 0.7615
+Recall: 0.5165
+F1-Score: 0.6155
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: 0.5, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 263
+False Positives (FP): 312
+True Negatives (TN): 533
+False Negatives (FN): 67
+Precision: 0.7970
+Recall: 0.4574
+F1-Score: 0.5812
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: 1.0, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 228
+False Positives (FP): 347
+True Negatives (TN): 552
+False Negatives (FN): 48
+Precision: 0.8261
+Recall: 0.3965
+F1-Score: 0.5358
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: 1.5, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 200
+False Positives (FP): 375
+True Negatives (TN): 567
+False Negatives (FN): 33
+Precision: 0.8584
+Recall: 0.3478
+F1-Score: 0.4950
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: 2.0, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 170
+False Positives (FP): 405
+True Negatives (TN): 577
+False Negatives (FN): 23
+Precision: 0.8808
+Recall: 0.2957
+F1-Score: 0.4427
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: 2.5, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 151
+False Positives (FP): 424
+True Negatives (TN): 582
+False Negatives (FN): 18
+Precision: 0.8935
+Recall: 0.2626
+F1-Score: 0.4059
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: 3.0, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 122
+False Positives (FP): 453
+True Negatives (TN): 588
+False Negatives (FN): 12
+Precision: 0.9104
+Recall: 0.2122
+F1-Score: 0.3441
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: -0.5, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 330
+False Positives (FP): 245
+True Negatives (TN): 479
+False Negatives (FN): 121
+Precision: 0.7317
+Recall: 0.5739
+F1-Score: 0.6433
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: -1.0, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 349
+False Positives (FP): 226
+True Negatives (TN): 435
+False Negatives (FN): 165
+Precision: 0.6790
+Recall: 0.6070
+F1-Score: 0.6410
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: 0.0, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1054
+Percentage of data points categorized: 89.70%
+True Positives (TP): 263
+False Positives (FP): 245
+True Negatives (TN): 479
+False Negatives (FN): 67
+Precision: 0.7970
+Recall: 0.5177
+F1-Score: 0.6277
+Average Precision (AP): 0.7554
+Area Under the Curve (AUC): 0.7209
+
+Threshold: 0.0, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 937
+Percentage of data points categorized: 79.74%
+True Positives (TP): 228
+False Positives (FP): 226
+True Negatives (TN): 435
+False Negatives (FN): 48
+Precision: 0.8261
+Recall: 0.5022
+F1-Score: 0.6247
+Average Precision (AP): 0.7663
+Area Under the Curve (AUC): 0.7287
+
+Threshold: 0.0, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 814
+Percentage of data points categorized: 69.28%
+True Positives (TP): 200
+False Positives (FP): 199
+True Negatives (TN): 382
+False Negatives (FN): 33
+Precision: 0.8584
+Recall: 0.5013
+F1-Score: 0.6329
+Average Precision (AP): 0.7822
+Area Under the Curve (AUC): 0.7405
+
+Threshold: 0.0, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 701
+Percentage of data points categorized: 59.66%
+True Positives (TP): 170
+False Positives (FP): 171
+True Negatives (TN): 337
+False Negatives (FN): 23
+Precision: 0.8808
+Recall: 0.4985
+F1-Score: 0.6367
+Average Precision (AP): 0.7912
+Area Under the Curve (AUC): 0.7459
+
+Threshold: 0.0, PropThreshold: 2.5
+Total data points: 1175
+Filtered data points: 589
+Percentage of data points categorized: 50.13%
+True Positives (TP): 151
+False Positives (FP): 132
+True Negatives (TN): 288
+False Negatives (FN): 18
+Precision: 0.8935
+Recall: 0.5336
+F1-Score: 0.6681
+Average Precision (AP): 0.7971
+Area Under the Curve (AUC): 0.7468
+
+Threshold: 0.0, PropThreshold: 3.0
+Total data points: 1175
+Filtered data points: 468
+Percentage of data points categorized: 39.83%
+True Positives (TP): 122
+False Positives (FP): 99
+True Negatives (TN): 235
+False Negatives (FN): 12
+Precision: 0.9104
+Recall: 0.5520
+F1-Score: 0.6873
+Average Precision (AP): 0.7958
+Area Under the Curve (AUC): 0.7398
+
+Threshold: 0.0, PropThreshold: 3.5
+Total data points: 1175
+Filtered data points: 358
+Percentage of data points categorized: 30.47%
+True Positives (TP): 99
+False Positives (FP): 79
+True Negatives (TN): 174
+False Negatives (FN): 6
+Precision: 0.9429
+Recall: 0.5562
+F1-Score: 0.6996
+Average Precision (AP): 0.8189
+Area Under the Curve (AUC): 0.7554
+
+Threshold: 0.0, PropThreshold: 4.0
+Total data points: 1175
+Filtered data points: 254
+Percentage of data points categorized: 21.62%
+True Positives (TP): 76
+False Positives (FP): 59
+True Negatives (TN): 116
+False Negatives (FN): 3
+Precision: 0.9620
+Recall: 0.5630
+F1-Score: 0.7103
+Average Precision (AP): 0.8531
+Area Under the Curve (AUC): 0.7856
+
+Threshold: 0.5, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1061
+Percentage of data points categorized: 90.30%
+True Positives (TP): 228
+False Positives (FP): 278
+True Negatives (TN): 507
+False Negatives (FN): 48
+Precision: 0.8261
+Recall: 0.4506
+F1-Score: 0.5831
+Average Precision (AP): 0.7500
+Area Under the Curve (AUC): 0.7167
+
+Threshold: 0.5, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 957
+Percentage of data points categorized: 81.45%
+True Positives (TP): 200
+False Positives (FP): 245
+True Negatives (TN): 479
+False Negatives (FN): 33
+Precision: 0.8584
+Recall: 0.4494
+F1-Score: 0.5900
+Average Precision (AP): 0.7426
+Area Under the Curve (AUC): 0.7106
+
+Threshold: 0.5, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 854
+Percentage of data points categorized: 72.68%
+True Positives (TP): 170
+False Positives (FP): 226
+True Negatives (TN): 435
+False Negatives (FN): 23
+Precision: 0.8808
+Recall: 0.4293
+F1-Score: 0.5772
+Average Precision (AP): 0.7474
+Area Under the Curve (AUC): 0.7140
+
+Threshold: 0.5, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 750
+Percentage of data points categorized: 63.83%
+True Positives (TP): 151
+False Positives (FP): 199
+True Negatives (TN): 382
+False Negatives (FN): 18
+Precision: 0.8935
+Recall: 0.4314
+F1-Score: 0.5819
+Average Precision (AP): 0.7603
+Area Under the Curve (AUC): 0.7233
+
+Threshold: 1.0, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1078
+Percentage of data points categorized: 91.74%
+True Positives (TP): 200
+False Positives (FP): 312
+True Negatives (TN): 533
+False Negatives (FN): 33
+Precision: 0.8584
+Recall: 0.3906
+F1-Score: 0.5369
+Average Precision (AP): 0.7448
+Area Under the Curve (AUC): 0.7131
+
+Threshold: 1.0, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 978
+Percentage of data points categorized: 83.23%
+True Positives (TP): 170
+False Positives (FP): 278
+True Negatives (TN): 507
+False Negatives (FN): 23
+Precision: 0.8808
+Recall: 0.3795
+F1-Score: 0.5304
+Average Precision (AP): 0.7316
+Area Under the Curve (AUC): 0.7025
+
+Threshold: 1.0, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 893
+Percentage of data points categorized: 76.00%
+True Positives (TP): 151
+False Positives (FP): 245
+True Negatives (TN): 479
+False Negatives (FN): 18
+Precision: 0.8935
+Recall: 0.3813
+F1-Score: 0.5345
+Average Precision (AP): 0.7139
+Area Under the Curve (AUC): 0.6900
+
+Threshold: 1.0, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 795
+Percentage of data points categorized: 67.66%
+True Positives (TP): 122
+False Positives (FP): 226
+True Negatives (TN): 435
+False Negatives (FN): 12
+Precision: 0.9104
+Recall: 0.3506
+F1-Score: 0.5062
+Average Precision (AP): 0.7104
+Area Under the Curve (AUC): 0.6881
+
+Threshold: 1.0, PropThreshold: 2.5
+Total data points: 1175
+Filtered data points: 686
+Percentage of data points categorized: 58.38%
+True Positives (TP): 99
+False Positives (FP): 199
+True Negatives (TN): 382
+False Negatives (FN): 6
+Precision: 0.9429
+Recall: 0.3322
+F1-Score: 0.4913
+Average Precision (AP): 0.7144
+Area Under the Curve (AUC): 0.6915
+
+Threshold: 1.0, PropThreshold: 3.0
+Total data points: 1175
+Filtered data points: 587
+Percentage of data points categorized: 49.96%
+True Positives (TP): 76
+False Positives (FP): 171
+True Negatives (TN): 337
+False Negatives (FN): 3
+Precision: 0.9620
+Recall: 0.3077
+F1-Score: 0.4663
+Average Precision (AP): 0.7046
+Area Under the Curve (AUC): 0.6833
+
+Threshold: 1.5, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1092
+Percentage of data points categorized: 92.94%
+True Positives (TP): 170
+False Positives (FP): 347
+True Negatives (TN): 552
+False Negatives (FN): 23
+Precision: 0.8808
+Recall: 0.3288
+F1-Score: 0.4789
+Average Precision (AP): 0.7399
+Area Under the Curve (AUC): 0.7099
+
+Threshold: 1.5, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 1014
+Percentage of data points categorized: 86.30%
+True Positives (TP): 151
+False Positives (FP): 312
+True Negatives (TN): 533
+False Negatives (FN): 18
+Precision: 0.8935
+Recall: 0.3261
+F1-Score: 0.4778
+Average Precision (AP): 0.7229
+Area Under the Curve (AUC): 0.6974
+
+Threshold: 1.5, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 919
+Percentage of data points categorized: 78.21%
+True Positives (TP): 122
+False Positives (FP): 278
+True Negatives (TN): 507
+False Negatives (FN): 12
+Precision: 0.9104
+Recall: 0.3050
+F1-Score: 0.4569
+Average Precision (AP): 0.6970
+Area Under the Curve (AUC): 0.6787
+
+Threshold: 1.5, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 829
+Percentage of data points categorized: 70.55%
+True Positives (TP): 99
+False Positives (FP): 245
+True Negatives (TN): 479
+False Negatives (FN): 6
+Precision: 0.9429
+Recall: 0.2878
+F1-Score: 0.4410
+Average Precision (AP): 0.6601
+Area Under the Curve (AUC): 0.6560
+
+Threshold: 1.5, PropThreshold: 2.5
+Total data points: 1175
+Filtered data points: 740
+Percentage of data points categorized: 62.98%
+True Positives (TP): 76
+False Positives (FP): 226
+True Negatives (TN): 435
+False Negatives (FN): 3
+Precision: 0.9620
+Recall: 0.2517
+F1-Score: 0.3990
+Average Precision (AP): 0.6480
+Area Under the Curve (AUC): 0.6509
+
+Threshold: 2.0, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1111
+Percentage of data points categorized: 94.55%
+True Positives (TP): 151
+False Positives (FP): 375
+True Negatives (TN): 567
+False Negatives (FN): 18
+Precision: 0.8935
+Recall: 0.2871
+F1-Score: 0.4345
+Average Precision (AP): 0.7358
+Area Under the Curve (AUC): 0.7075
+
+Threshold: 2.0, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 1033
+Percentage of data points categorized: 87.91%
+True Positives (TP): 122
+False Positives (FP): 347
+True Negatives (TN): 552
+False Negatives (FN): 12
+Precision: 0.9104
+Recall: 0.2601
+F1-Score: 0.4046
+Average Precision (AP): 0.7130
+Area Under the Curve (AUC): 0.6917
+
+Threshold: 2.0, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 950
+Percentage of data points categorized: 80.85%
+True Positives (TP): 99
+False Positives (FP): 312
+True Negatives (TN): 533
+False Negatives (FN): 6
+Precision: 0.9429
+Recall: 0.2409
+F1-Score: 0.3837
+Average Precision (AP): 0.6825
+Area Under the Curve (AUC): 0.6715
+
+Threshold: 2.0, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 864
+Percentage of data points categorized: 73.53%
+True Positives (TP): 76
+False Positives (FP): 278
+True Negatives (TN): 507
+False Negatives (FN): 3
+Precision: 0.9620
+Recall: 0.2147
+F1-Score: 0.3510
+Average Precision (AP): 0.6424
+Area Under the Curve (AUC): 0.6461
+
+Threshold: 2.0, PropThreshold: 2.5
+Total data points: 1175
+Filtered data points: 785
+Percentage of data points categorized: 66.81%
+True Positives (TP): 59
+False Positives (FP): 245
+True Negatives (TN): 479
+False Negatives (FN): 2
+Precision: 0.9672
+Recall: 0.1941
+F1-Score: 0.3233
+Average Precision (AP): 0.5838
+Area Under the Curve (AUC): 0.6152
+
+Threshold: 2.0, PropThreshold: 3.0
+Total data points: 1175
+Filtered data points: 714
+Percentage of data points categorized: 60.77%
+True Positives (TP): 52
+False Positives (FP): 226
+True Negatives (TN): 435
+False Negatives (FN): 1
+Precision: 0.9811
+Recall: 0.1871
+F1-Score: 0.3142
+Average Precision (AP): 0.5953
+Area Under the Curve (AUC): 0.6232
+
+Threshold: 2.5, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1116
+Percentage of data points categorized: 94.98%
+True Positives (TP): 122
+False Positives (FP): 405
+True Negatives (TN): 577
+False Negatives (FN): 12
+Precision: 0.9104
+Recall: 0.2315
+F1-Score: 0.3691
+Average Precision (AP): 0.7315
+Area Under the Curve (AUC): 0.7050
+
+Threshold: 2.5, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 1047
+Percentage of data points categorized: 89.11%
+True Positives (TP): 99
+False Positives (FP): 375
+True Negatives (TN): 567
+False Negatives (FN): 6
+Precision: 0.9429
+Recall: 0.2089
+F1-Score: 0.3420
+Average Precision (AP): 0.7050
+Area Under the Curve (AUC): 0.6877
+
+Threshold: 2.5, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 978
+Percentage of data points categorized: 83.23%
+True Positives (TP): 76
+False Positives (FP): 347
+True Negatives (TN): 552
+False Negatives (FN): 3
+Precision: 0.9620
+Recall: 0.1797
+F1-Score: 0.3028
+Average Precision (AP): 0.6712
+Area Under the Curve (AUC): 0.6673
+
+Threshold: 2.5, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 906
+Percentage of data points categorized: 77.11%
+True Positives (TP): 59
+False Positives (FP): 312
+True Negatives (TN): 533
+False Negatives (FN): 2
+Precision: 0.9672
+Recall: 0.1590
+F1-Score: 0.2731
+Average Precision (AP): 0.6245
+Area Under the Curve (AUC): 0.6404
+
+Threshold: -0.5, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 330
+False Positives (FP): 245
+True Negatives (TN): 479
+False Negatives (FN): 121
+Precision: 0.7317
+Recall: 0.5739
+F1-Score: 0.6433
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: -0.5, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1051
+Percentage of data points categorized: 89.45%
+True Positives (TP): 297
+False Positives (FP): 226
+True Negatives (TN): 435
+False Negatives (FN): 93
+Precision: 0.7615
+Recall: 0.5679
+F1-Score: 0.6506
+Average Precision (AP): 0.7676
+Area Under the Curve (AUC): 0.7303
+
+Threshold: -0.5, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 911
+Percentage of data points categorized: 77.53%
+True Positives (TP): 263
+False Positives (FP): 199
+True Negatives (TN): 382
+False Negatives (FN): 67
+Precision: 0.7970
+Recall: 0.5693
+F1-Score: 0.6641
+Average Precision (AP): 0.7873
+Area Under the Curve (AUC): 0.7451
+
+Threshold: -0.5, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 911
+Percentage of data points categorized: 77.53%
+True Positives (TP): 263
+False Positives (FP): 199
+True Negatives (TN): 382
+False Negatives (FN): 67
+Precision: 0.7970
+Recall: 0.5693
+F1-Score: 0.6641
+Average Precision (AP): 0.7873
+Area Under the Curve (AUC): 0.7451
+
+Threshold: -0.5, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 784
+Percentage of data points categorized: 66.72%
+True Positives (TP): 228
+False Positives (FP): 171
+True Negatives (TN): 337
+False Negatives (FN): 48
+Precision: 0.8261
+Recall: 0.5714
+F1-Score: 0.6756
+Average Precision (AP): 0.8024
+Area Under the Curve (AUC): 0.7563
+
+Threshold: -0.5, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 653
+Percentage of data points categorized: 55.57%
+True Positives (TP): 200
+False Positives (FP): 132
+True Negatives (TN): 288
+False Negatives (FN): 33
+Precision: 0.8584
+Recall: 0.6024
+F1-Score: 0.7080
+Average Precision (AP): 0.8154
+Area Under the Curve (AUC): 0.7639
+
+Threshold: -0.5, PropThreshold: 2.5
+Total data points: 1175
+Filtered data points: 527
+Percentage of data points categorized: 44.85%
+True Positives (TP): 170
+False Positives (FP): 99
+True Negatives (TN): 235
+False Negatives (FN): 23
+Precision: 0.8808
+Recall: 0.6320
+F1-Score: 0.7359
+Average Precision (AP): 0.8254
+Area Under the Curve (AUC): 0.7672
+
+Threshold: -0.5, PropThreshold: 3.0
+Total data points: 1175
+Filtered data points: 422
+Percentage of data points categorized: 35.91%
+True Positives (TP): 151
+False Positives (FP): 79
+True Negatives (TN): 174
+False Negatives (FN): 18
+Precision: 0.8935
+Recall: 0.6565
+F1-Score: 0.7569
+Average Precision (AP): 0.8523
+Area Under the Curve (AUC): 0.7857
+
+Threshold: -1.0, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 349
+False Positives (FP): 226
+True Negatives (TN): 435
+False Negatives (FN): 165
+Precision: 0.6790
+Recall: 0.6070
+F1-Score: 0.6410
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: -1.0, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1032
+Percentage of data points categorized: 87.83%
+True Positives (TP): 330
+False Positives (FP): 199
+True Negatives (TN): 382
+False Negatives (FN): 121
+Precision: 0.7317
+Recall: 0.6238
+F1-Score: 0.6735
+Average Precision (AP): 0.7780
+Area Under the Curve (AUC): 0.7374
+
+Threshold: -1.0, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 898
+Percentage of data points categorized: 76.43%
+True Positives (TP): 297
+False Positives (FP): 171
+True Negatives (TN): 337
+False Negatives (FN): 93
+Precision: 0.7615
+Recall: 0.6346
+F1-Score: 0.6923
+Average Precision (AP): 0.7967
+Area Under the Curve (AUC): 0.7518
+
+Threshold: -1.0, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 750
+Percentage of data points categorized: 63.83%
+True Positives (TP): 263
+False Positives (FP): 132
+True Negatives (TN): 288
+False Negatives (FN): 67
+Precision: 0.7970
+Recall: 0.6658
+F1-Score: 0.7255
+Average Precision (AP): 0.8162
+Area Under the Curve (AUC): 0.7662
+
+Threshold: -1.0, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 610
+Percentage of data points categorized: 51.91%
+True Positives (TP): 228
+False Positives (FP): 99
+True Negatives (TN): 235
+False Negatives (FN): 48
+Precision: 0.8261
+Recall: 0.6972
+F1-Score: 0.7562
+Average Precision (AP): 0.8344
+Area Under the Curve (AUC): 0.7773
+
+Threshold: -1.0, PropThreshold: 2.5
+Total data points: 1175
+Filtered data points: 486
+Percentage of data points categorized: 41.36%
+True Positives (TP): 200
+False Positives (FP): 79
+True Negatives (TN): 174
+False Negatives (FN): 33
+Precision: 0.8584
+Recall: 0.7168
+F1-Score: 0.7812
+Average Precision (AP): 0.8609
+Area Under the Curve (AUC): 0.7939
+
+Threshold: -1.0, PropThreshold: 3.0
+Total data points: 1175
+Filtered data points: 368
+Percentage of data points categorized: 31.32%
+True Positives (TP): 170
+False Positives (FP): 59
+True Negatives (TN): 116
+False Negatives (FN): 23
+Precision: 0.8808
+Recall: 0.7424
+F1-Score: 0.8057
+Average Precision (AP): 0.8923
+Area Under the Curve (AUC): 0.8179
+
+Threshold: -1.5, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 376
+False Positives (FP): 199
+True Negatives (TN): 382
+False Negatives (FN): 218
+Precision: 0.6330
+Recall: 0.6539
+F1-Score: 0.6433
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: -1.5, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1022
+Percentage of data points categorized: 86.98%
+True Positives (TP): 349
+False Positives (FP): 171
+True Negatives (TN): 337
+False Negatives (FN): 165
+Precision: 0.6790
+Recall: 0.6712
+F1-Score: 0.6750
+Average Precision (AP): 0.7778
+Area Under the Curve (AUC): 0.7380
+
+Threshold: -1.5, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 871
+Percentage of data points categorized: 74.13%
+True Positives (TP): 330
+False Positives (FP): 132
+True Negatives (TN): 288
+False Negatives (FN): 121
+Precision: 0.7317
+Recall: 0.7143
+F1-Score: 0.7229
+Average Precision (AP): 0.8033
+Area Under the Curve (AUC): 0.7558
+
+Threshold: -1.5, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 871
+Percentage of data points categorized: 74.13%
+True Positives (TP): 330
+False Positives (FP): 132
+True Negatives (TN): 288
+False Negatives (FN): 121
+Precision: 0.7317
+Recall: 0.7143
+F1-Score: 0.7229
+Average Precision (AP): 0.8033
+Area Under the Curve (AUC): 0.7558
+
+Threshold: -1.5, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 724
+Percentage of data points categorized: 61.62%
+True Positives (TP): 297
+False Positives (FP): 99
+True Negatives (TN): 235
+False Negatives (FN): 93
+Precision: 0.7615
+Recall: 0.7500
+F1-Score: 0.7557
+Average Precision (AP): 0.8253
+Area Under the Curve (AUC): 0.7700
+
+Threshold: -1.5, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 583
+Percentage of data points categorized: 49.62%
+True Positives (TP): 263
+False Positives (FP): 79
+True Negatives (TN): 174
+False Negatives (FN): 67
+Precision: 0.7970
+Recall: 0.7690
+F1-Score: 0.7827
+Average Precision (AP): 0.8526
+Area Under the Curve (AUC): 0.7849
+
+Threshold: -1.5, PropThreshold: 2.5
+Total data points: 1175
+Filtered data points: 451
+Percentage of data points categorized: 38.38%
+True Positives (TP): 228
+False Positives (FP): 59
+True Negatives (TN): 116
+False Negatives (FN): 48
+Precision: 0.8261
+Recall: 0.7944
+F1-Score: 0.8099
+Average Precision (AP): 0.8828
+Area Under the Curve (AUC): 0.8036
+
+Threshold: -1.5, PropThreshold: 3.0
+Total data points: 1175
+Filtered data points: 341
+Percentage of data points categorized: 29.02%
+True Positives (TP): 200
+False Positives (FP): 36
+True Negatives (TN): 72
+False Negatives (FN): 33
+Precision: 0.8584
+Recall: 0.8475
+F1-Score: 0.8529
+Average Precision (AP): 0.9112
+Area Under the Curve (AUC): 0.8216
+
+Threshold: -2.0, PropThreshold: 0.0
+Total data points: 1175
+Filtered data points: 1175
+Percentage of data points categorized: 100.00%
+True Positives (TP): 404
+False Positives (FP): 171
+True Negatives (TN): 337
+False Negatives (FN): 263
+Precision: 0.6057
+Recall: 0.7026
+F1-Score: 0.6506
+Average Precision (AP): 0.7522
+Area Under the Curve (AUC): 0.7192
+
+Threshold: -2.0, PropThreshold: 0.5
+Total data points: 1175
+Filtered data points: 1014
+Percentage of data points categorized: 86.30%
+True Positives (TP): 376
+False Positives (FP): 132
+True Negatives (TN): 288
+False Negatives (FN): 218
+Precision: 0.6330
+Recall: 0.7402
+F1-Score: 0.6824
+Average Precision (AP): 0.7778
+Area Under the Curve (AUC): 0.7406
+
+Threshold: -2.0, PropThreshold: 1.0
+Total data points: 1175
+Filtered data points: 848
+Percentage of data points categorized: 72.17%
+True Positives (TP): 349
+False Positives (FP): 99
+True Negatives (TN): 235
+False Negatives (FN): 165
+Precision: 0.6790
+Recall: 0.7790
+F1-Score: 0.7256
+Average Precision (AP): 0.8063
+Area Under the Curve (AUC): 0.7593
+
+Threshold: -2.0, PropThreshold: 1.5
+Total data points: 1175
+Filtered data points: 704
+Percentage of data points categorized: 59.91%
+True Positives (TP): 330
+False Positives (FP): 79
+True Negatives (TN): 174
+False Negatives (FN): 121
+Precision: 0.7317
+Recall: 0.8068
+F1-Score: 0.7674
+Average Precision (AP): 0.8331
+Area Under the Curve (AUC): 0.7660
+
+Threshold: -2.0, PropThreshold: 2.0
+Total data points: 1175
+Filtered data points: 565
+Percentage of data points categorized: 48.09%
+True Positives (TP): 297
+False Positives (FP): 59
+True Negatives (TN): 116
+False Negatives (FN): 93
+Precision: 0.7615
+Recall: 0.8343
+F1-Score: 0.7962
+Average Precision (AP): 0.8604
+Area Under the Curve (AUC): 0.7754
+
+Threshold: -2.0, PropThreshold: 2.5
+Total data points: 1175
+Filtered data points: 438
+Percentage of data points categorized: 37.28%
+True Positives (TP): 263
+False Positives (FP): 36
+True Negatives (TN): 72
+False Negatives (FN): 67
+Precision: 0.7970
+Recall: 0.8796
+F1-Score: 0.8362
+Average Precision (AP): 0.8890
+Area Under the Curve (AUC): 0.7886
+
+Threshold: -2.0, PropThreshold: 3.0
+Total data points: 1175
+Filtered data points: 339
+Percentage of data points categorized: 28.85%
+True Positives (TP): 228
+False Positives (FP): 19
+True Negatives (TN): 44
+False Negatives (FN): 48
+Precision: 0.8261
+Recall: 0.9231
+F1-Score: 0.8719
+Average Precision (AP): 0.9130
+Area Under the Curve (AUC): 0.8018
+
+Threshold: -2.0, PropThreshold: 3.5
+Total data points: 1175
+Filtered data points: 267
+Percentage of data points categorized: 22.72%
+True Positives (TP): 200
+False Positives (FP): 9
+True Negatives (TN): 25
+False Negatives (FN): 33
+Precision: 0.8584
+Recall: 0.9569
+F1-Score: 0.9050
+Average Precision (AP): 0.9304
+Area Under the Curve (AUC): 0.7934
+
+Threshold: -3.0, PropThreshold: 3.5
+Total data points: 1175
+Filtered data points: 332
+Percentage of data points categorized: 28.26%
+True Positives (TP): 263
+False Positives (FP): 0
+True Negatives (TN): 2
+False Negatives (FN): 67
+Precision: 0.7970
+Recall: 1.0000
+F1-Score: 0.8870
+Average Precision (AP): 0.9090
+Area Under the Curve (AUC): 0.7117
+
+Threshold: -1.0, PropThreshold: 3.5
+Total data points: 1175
+Filtered data points: 277
+Percentage of data points categorized: 23.57%
+True Positives (TP): 151
+False Positives (FP): 36
+True Negatives (TN): 72
+False Negatives (FN): 18
+Precision: 0.8935
+Recall: 0.8075
+F1-Score: 0.8483
+Average Precision (AP): 0.9221
+Area Under the Curve (AUC): 0.8440
+
+Threshold: 0.0, PropThreshold: 3.5
+Total data points: 1175
+Filtered data points: 358
+Percentage of data points categorized: 30.47%
+True Positives (TP): 99
+False Positives (FP): 79
+True Negatives (TN): 174
+False Negatives (FN): 6
+Precision: 0.9429
+Recall: 0.5562
+F1-Score: 0.6996
+Average Precision (AP): 0.8189
+Area Under the Curve (AUC): 0.7554
+
+Threshold: -1.0, PropThreshold: 3.0
+Total data points: 1175
+Filtered data points: 368
+Percentage of data points categorized: 31.32%
+True Positives (TP): 170
+False Positives (FP): 59
+True Negatives (TN): 116
+False Negatives (FN): 23
+Precision: 0.8808
+Recall: 0.7424
+F1-Score: 0.8057
+Average Precision (AP): 0.8923
+Area Under the Curve (AUC): 0.8179
+
+Threshold: -1.0, PropThreshold: 4.0
+Total data points: 1175
+Filtered data points: 197
+Percentage of data points categorized: 16.77%
+True Positives (TP): 122
+False Positives (FP): 19
+True Negatives (TN): 44
+False Negatives (FN): 12
+Precision: 0.9104
+Recall: 0.8652
+F1-Score: 0.8873
+Average Precision (AP): 0.9483
+Area Under the Curve (AUC): 0.8759
+
