@@ -7,7 +7,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 1. **Create a virtual environment**:
     ```sh
-    python -m venv myenv
+    python3 -m venv myenv
     ```
 
 2. **Activate the virtual environment**:
@@ -35,9 +35,14 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     ```sh
     cd icpr2020dfdc/notebook
     ```
-
-7. **Place your scripts**:
-    Copy all the supplementary scripts into the `notebook` root directory.
+7. **Clone this repository**:
+    ```sh
+    git clone https://github.com/nikiwlan/BA-Deepfake-Detection-Utils.git
+    ```
+8. **Navigate to the icpr2020dfdc directory**:
+    ```sh
+    cd BA-Deepfake-Detection-Utils/icpr2020dfdc
+    ```    
 
 ## Directory Structure
 
@@ -63,7 +68,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     - **Note: Adjust the paths of the datasets in the scripts!**
     - For fake videos:
         ```sh
-        python process_data/calculate_fake_pred_values.py --dataset FF++
+        python3 process_data/calculate_fake_pred_values.py --dataset FF++
         ```
         - `--dataset`: Specifies the dataset to process. Use `FF++` or `Celeb-DF`.
 
