@@ -19,9 +19,9 @@ def read_predictions(file_path):
                 print(f"Skipping line due to error: {line.strip()} -> {e}")
     return predictions
 
-def main(threshold, propThreshold):
-    real_scores = read_predictions('predictions.txt')
-    fake_scores = read_predictions('predictionsFake.txt')
+def main(threshold, propThreshold, real_path, fake_path):
+    real_scores = read_predictions(real_path)
+    fake_scores = read_predictions(fake_path)
 
     total_real = len(real_scores)
     total_fake = len(fake_scores)
@@ -144,6 +144,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate predictions with different thresholds.")
     parser.add_argument('--threshold', type=float, required=True, help='Threshold value')
     parser.add_argument('--propThreshold', type=float, required=True, help='Proportional threshold value')
+    parser.add_argument('--real_path', type=str, required=True, help='Path to the file with real video predictions')
+    parser.add_argument('--fake_path', type=str, required=True, help='Path to the file with fake video predictions')
     args = parser.parse_args()
 
-    main(args.threshold, args.propThreshold)
+    main(args.threshold, args.propThreshold, args.real_path, args.fake_path)
