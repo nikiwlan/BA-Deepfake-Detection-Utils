@@ -80,9 +80,9 @@ The results presented in my bachelor thesis can be recreated or tested on additi
         ```
         - `--dataset`: Specifies the dataset to process. Use `FF++` or `Celeb-DF`.
           
-    - **Note: The own prediction values are created in the icpr2020dfdc root directory!**
+    - **Note: The newly generated prediction values are created in the icpr2020dfdc root directory!**
 
-3. **Process Prediction Values and Compute Metrics**:
+2. **Process Prediction Values and Compute Metrics**:
     ```sh
     python3 results/process_prediction_values_and_compute_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions]
     ```
@@ -96,6 +96,6 @@ The results presented in my bachelor thesis can be recreated or tested on additi
    python3 results/process_prediction_values_and_compute_metrics.py --threshold 0 --propThreshold 0 --real_path prediction_real_values_ff++.txt --fake_path prediction_fake_values_ff++.txt
    ```
 
-4. **View Results**:
+3. **View Results**:
     - Evaluation metrics can be found in `results/metrics/results.txt`.
     - ROC curve plots can be found in `results/roc_plots/`.
