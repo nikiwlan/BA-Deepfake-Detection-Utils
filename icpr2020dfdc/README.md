@@ -11,10 +11,9 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     ```
 
 2. **Activate the virtual environment**:
-    - On Linux:
-        ```sh
-        source myenv/bin/activate
-        ```
+    ```sh
+    source myenv/bin/activate
+    ```
 
 3. **Install necessary packages**:
     ```sh
