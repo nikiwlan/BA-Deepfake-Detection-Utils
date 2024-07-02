@@ -5,25 +5,42 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 ## Setup
 
-1. **Create a virtual environment**:
+1. **Clone the RealForensics git repository**:
     ```sh
-    python3 -m venv myenv
+    git clone https://github.com/ahaliassos/RealForensics.git
     ```
 
-2. **Activate the virtual environment**:
+2. **Navigate to the repository**:
     ```sh
-    source myenv/bin/activate
+    cd RealForensics
     ```
 
-3. **Install necessary packages**:
+3. **Download Miniconda**:
     ```sh
-    pip install torch numpy scipy argparse torchvision matplotlib
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O Miniconda3-latest-Linux-x86_64.sh
     ```
 
-4. **Clone the repository**:
+4. **Run the installer**:
     ```sh
-    git clone https://github.com/polimi-ispl/icpr2020dfdc
+    bash Miniconda3-latest-Linux-x86_64.sh
     ```
+
+5. **Initialize Conda**:
+    ```sh
+    source ~/miniconda3/bin/activate
+    conda init
+    ```
+
+6. **Create the environment by running the environment.yml file**:
+    ```sh
+    conda env create -f environment.yml
+    ```
+
+6. **Activate the newly created environment**:
+    ```sh
+    conda activate el_dorado
+    ```
+    
 
 5. **Install additional dependencies**:
     ```sh
