@@ -88,12 +88,12 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     ```
     - `--threshold`: Threshold value.
     - `--propThreshold`: Probability threshold value.
-    - `--real_path`: Path to the file with real video predictions.
-    - `--fake_path`: Path to the file with fake video predictions.
+    - `--real_path`: Path to the .txt file with real video predictions.
+    - `--fake_path`: Path to the .txt file with fake video predictions.
 
    **Example Command**
    ```sh
-   python3 results/process_prediction_values_and_compute_metrics.py --threshold 0 --propThreshold 0 --real_path ../prediction_real_values_ff++ --fake_path ../prediction_fake_values_ff++
+   python3 results/process_prediction_values_and_compute_metrics.py --threshold 0 --propThreshold 0 --real_path prediction_real_values_ff++.txt --fake_path prediction_fake_values_ff++.txt
    ```
 
 4. **View Results**:
