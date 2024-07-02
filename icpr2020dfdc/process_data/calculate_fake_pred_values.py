@@ -6,7 +6,7 @@ import argparse
 import numpy as np
 from scipy.special import expit
 
-sys.path.append('..')
+sys.path.append('../../../')
 
 from blazeface import FaceExtractor, BlazeFace, VideoReader
 from architectures import fornet, weights
@@ -30,8 +30,8 @@ transf = utils.get_transformer(face_policy, face_size, net.get_normalizer(), tra
 
 # Initialize BlazeFace and VideoReader
 facedet = BlazeFace().to(device)
-facedet.load_weights("../blazeface/blazeface.pth")
-facedet.load_anchors("../blazeface/anchors.npy")
+facedet.load_weights("../../../blazeface/blazeface.pth")
+facedet.load_anchors("../../../blazeface/anchors.npy")
 videoreader = VideoReader(verbose=False)
 
 # Define video read function
@@ -108,4 +108,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     main(args.dataset)
-
