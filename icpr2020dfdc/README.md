@@ -84,7 +84,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 3. **Process Prediction Values and Compute Metrics**:
     ```sh
-    python3 results/evaluate_predictions_with_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions]
+    python3 results/process_prediction_values_and_compute_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions]
     ```
     - `--threshold`: Threshold value.
     - `--propThreshold`: Probability threshold value.
@@ -93,7 +93,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
    **Example Command**
    ```sh
-   python3 results/evaluate_predictions_with_metrics.py --threshold 0 --propThreshold 0 --real_path ../prediction_real_values_ff++ --fake_path ../prediction_fake_values_ff++
+   python3 results/process_prediction_values_and_compute_metrics.py --threshold 0 --propThreshold 0 --real_path ../prediction_real_values_ff++ --fake_path ../prediction_fake_values_ff++
    ```
 
 4. **View Results**:
