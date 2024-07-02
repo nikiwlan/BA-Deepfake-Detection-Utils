@@ -5,25 +5,40 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 ## Setup
 
-1. **Clone the repository**:
+1. **Create a virtual environment**:
     ```sh
-    !git clone https://github.com/polimi-ispl/icpr2020dfdc
+    python -m venv myenv
     ```
 
-2. **Install dependencies**:
+2. **Activate the virtual environment**:
+    - On Linux:
+        ```sh
+        source myenv/bin/activate
+        ```
+
+3. **Install necessary packages**:
     ```sh
-    !pip install efficientnet-pytorch
-    !pip install -U git+https://github.com/albu/albumentations > /dev/null
+    pip install torch numpy scipy argparse
     ```
 
-3. **Navigate to the notebook directory**:
+4. **Clone the repository**:
     ```sh
-    %cd icpr2020dfdc/notebook
+    git clone https://github.com/polimi-ispl/icpr2020dfdc
     ```
 
-4. **Place your scripts**:
-    Copy your supplementary scripts into the `notebook` directory.
+5. **Install additional dependencies**:
+    ```sh
+    pip install efficientnet-pytorch
+    pip install -U git+https://github.com/albu/albumentations > /dev/null
+    ```
 
+6. **Navigate to the notebook directory**:
+    ```sh
+    cd icpr2020dfdc/notebook
+    ```
+
+7. **Place your scripts**:
+    Copy all the supplementary scripts into the `notebook` root directory.
 
 ## Directory Structure
 
