@@ -17,7 +17,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 3. **Install necessary packages**:
     ```sh
-    pip install torch numpy scipy argparse
+    pip install torch numpy scipy argparse torchvision matplotlib
     ```
 
 4. **Clone the repository**:
@@ -65,7 +65,9 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 ## Usage
 
 1. **Calculate Prediction Values**:
+   
     - **Note: Adjust the paths of the datasets in the scripts!**
+      
     - For fake videos:
         ```sh
         python3 process_data/calculate_fake_pred_values.py --dataset FF++
@@ -77,8 +79,10 @@ The results presented in my bachelor thesis can be recreated or tested on additi
         python process_data/calculate_real_pred_values.py --dataset FF++
         ```
         - `--dataset`: Specifies the dataset to process. Use `FF++` or `Celeb-DF`.
+          
+    - **Note: The own prediction values are created in the icpr2020dfdc root directory!**
 
-2. **Process Prediction Values and Compute Metrics**:
+3. **Process Prediction Values and Compute Metrics**:
     ```sh
     python evaluate_predictions_with_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions]
     ```
@@ -87,6 +91,6 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     - `--real_path`: Path to the file with real video predictions.
     - `--fake_path`: Path to the file with fake video predictions.
 
-3. **View Results**:
+4. **View Results**:
     - Evaluation metrics can be found in `results/metrics/results.txt`.
     - ROC curve plots can be found in `results/roc_plots/`.
