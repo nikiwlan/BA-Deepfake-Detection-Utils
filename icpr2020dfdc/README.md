@@ -76,10 +76,12 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 2. **Process Prediction Values and Compute Metrics**:
     ```sh
-    python results/process_prediction_values_and_compute_metrics.py --predictions_dir /path/to/prediction_values --output_dir /path/to/metrics
+    python evaluate_predictions_with_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions]
     ```
-    - `--predictions_dir`: Path to the directory containing the prediction value files.
-    - `--output_dir`: Path to the directory where the computed metrics will be saved.
+    - `--threshold`: Threshold value.
+    - `--propThreshold`: Proportional threshold value.
+    - `--real_path`: Path to the file with real video predictions.
+    - `--fake_path`: Path to the file with fake video predictions.
 
 3. **View Results**:
     - Evaluation metrics can be found in `results/metrics/results.txt`.
