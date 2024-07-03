@@ -96,7 +96,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
    **Example Command**
    ```sh
-   python3 results/process_prediction_values_and_compute_metrics.py --threshold 0 --propThreshold 0 --real_path prediction_real_values_ff++.txt --fake_path prediction_fake_values_ff++.txt     --dataset FF++
+   python3 results/process_prediction_values_and_compute_metrics.py --threshold 0 --propThreshold 0 --real_path prediction_real_values_ff++.txt --fake_path prediction_fake_values_ff++.txt --dataset FF++
    ```
 
 3. **View Results**:
