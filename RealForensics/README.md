@@ -64,14 +64,14 @@ Here, `{type}` can be one of the following:
 - FaceShifter
 - DeeperForensics
 
-**Example** For FaceForensics++ Deepfakes:
+**Example** for FaceForensics++ Deepfakes:
 `data/Forensics/Deepfakes/c23/videos`
 
 ## Facial Landmarks Placement
 
 Place the facial landmarks in the corresponding folders as `.npy` files. Use the same directory structure as for the videos, but replace `videos` with `landmarks`. Each landmark file should have the same name as its corresponding video, except that it ends in `.npy`.
 
-**Example** For FaceForensics++ Deepfakes landmarks:
+**Example** for FaceForensics++ Deepfakes landmarks:
 `data/Forensics/Deepfakes/c23/landmarks`
 
 In my case, the 68 landmarks are computed with face alignment.
@@ -80,7 +80,7 @@ In my case, the 68 landmarks are computed with face alignment.
 
 The extracted frames from the videos are placed in the corresponding folders. Use the same directory structure as for the videos, but replace `videos` with `frames`. Each frame should be named sequentially.
 
-**Example** For FaceForensics++ Deepfakes frames:
+**Example** for FaceForensics++ Deepfakes frames:
 `data/Forensics/Deepfakes/c23/frames`
 
 
