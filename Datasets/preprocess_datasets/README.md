@@ -15,7 +15,7 @@ This directory contains scripts and instructions for preprocessing datasets for 
     pip install opencv-python
     ```
 
-3. **Extract the single frames of the videos with the script within the dataset (e.g., FF++)**:
+3. **Extract the video frames (For instance for FF++)**:
     ```sh    
     python3 extract_compressed_videos_FaceForensics.py --data_path [yourLocalPath]/RealForensics/data/Forensics --dataset all --compression c23
     ```
