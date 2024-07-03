@@ -49,11 +49,9 @@ The steps to preprocess the datasets are located in a different directory. Pleas
 
 After extracting the frames in the videos and detecting the landmarks the folders have to be placed as following:
 
+## Video Placement
 
-**video placement**
-
-Place the videos in the corresponding directories.
-For example, for datasets like FaceForensics++, FaceShifter, and DeeperForensics, use the following structure:
+Place the videos in the corresponding directories. For example, for datasets like FaceForensics++, FaceShifter, and DeeperForensics, use the following structure:
 
 `data/Forensics/{type}/c23/videos`
 
@@ -66,12 +64,24 @@ Here, `{type}` can be one of the following:
 - FaceShifter
 - DeeperForensics
 
-**Example**
-
-For FaceForensics++ Deepfakes:
+**Example** For FaceForensics++ Deepfakes:
 `data/Forensics/Deepfakes/c23/videos`
 
+## Facial Landmarks Placement
 
+Place the facial landmarks in the corresponding folders as `.npy` files. Use the same directory structure as for the videos, but replace `videos` with `landmarks`. Each landmark file should have the same name as its corresponding video, except that it ends in `.npy`.
+
+**Example** For FaceForensics++ Deepfakes landmarks:
+`data/Forensics/Deepfakes/c23/landmarks`
+
+In my case, the 68 landmarks are computed with face alignment.
+
+## Extracted Frames Placement
+
+The extracted frames from the videos are placed in the corresponding folders. Use the same directory structure as for the videos, but replace `videos` with `frames`. Each frame should be named sequentially.
+
+**Example** For FaceForensics++ Deepfakes frames:
+`data/Forensics/Deepfakes/c23/frames`
 
 
 ## Directory Structure
