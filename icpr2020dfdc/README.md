@@ -88,11 +88,9 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     ```sh
     python3 results/process_prediction_values_and_compute_metrics.py --threshold [value] --propThreshold [value] --dataset [dataset_name]
     ```
-    - `--threshold`: Threshold value.
-    - `--propThreshold`: Probability threshold value.
-    - `--real_path`: Path to the .txt file with real video predictions.
-    - `--fake_path`: Path to the .txt file with fake video predictions.
-    - `--dataset FF++`: Specifies the dataset name, and is used to dynamically create and save the results and plots into corresponding directories based on this dataset name.
+    - `--threshold`: Threshold value. This value determines the cutoff point for classifying predictions as positive or negative. For example, predictions above the threshold are classified as positive, and those below are classified as negative. Adjusting this value changes the sensitivity of the classification.
+    - `--propThreshold`: Probability threshold value. This value defines a range around the main threshold to further refine classifications, potentially excluding uncertain predictions.
+    - `--dataset FF++`: Specifies the dataset name. It uses the dataset to determine which prediction .txt files to use. It then dynamically creates and saves results and plots in appropriate directories based on this dataset name. 
 
    **Example Command**
    ```sh
