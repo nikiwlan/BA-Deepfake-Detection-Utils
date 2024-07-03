@@ -6,8 +6,8 @@ This directory contains scripts and instructions for preprocessing datasets for 
 
 1. **Download the datasets (Celeb-DF or FF++)**:
 
-    - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics) (reduced to 500 real and 500 fake videos) 
-    - [FaceForensics++](https://github.com/ondyari/FaceForensics) (reduced to 600 real and 600 fake videos)
+    - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics) 
+    - [FaceForensics++](https://github.com/ondyari/FaceForensics) 
 
 
 2. **Install a necessary dependency for the script**:
@@ -32,7 +32,7 @@ This directory contains scripts and instructions for preprocessing datasets for 
 - **Dataset Reduction**:
   
     - **Celeb-DF**: Is reduced to 500 real and 500 fake videos.
-    - **FF++**: Is reduced to 600 real and 600 fake videos. Moreover, the generation methods are limited to Deepfakes, Face2Face, FaceSwap, and NeuralTextures.
+    - **FF++**: Is reduced to 600 real and 600 fake videos. Moreover, the generation methods are limited to Deepfakes, Face2Face, FaceSwap, and NeuralTextures. The original videos from actors and YouTube were combined into a single category called 'Real'.
 
 
 ## Directory Structure
