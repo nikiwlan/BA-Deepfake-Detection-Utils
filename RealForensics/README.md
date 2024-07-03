@@ -36,29 +36,29 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     conda env create -f environment.yml
     ```
 
-6. **Activate the newly created environment**:
+7. **Activate the newly created environment**:
     ```sh
     conda activate el_dorado
     ```
-    
+## Download and preprocess the datasets 
 
-5. **Install additional dependencies**:
-    ```sh
-    pip install efficientnet-pytorch
-    pip install -U git+https://github.com/albu/albumentations > /dev/null
+1. **Download the Dataset (Celeb-DF or FF++)**:
+  
+    - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics)
+    - [FaceForenscis++](https://github.com/ondyari/FaceForensics)
+   
+2. **Install a necessary dependenciy for the script**:
+    ```sh    
+    pip install opencv-python
     ```
+3. **Extract the single frames of the videos with the script within the dataset (e.g. FF++)**:
+    ```sh    
+    python3 extract_compressed_videos_FaceForensics.py --data_path [yourLocalPath]/RealForensics/data/Forensics --dataset all --compression c23
+    ```
+     - `--dataset`: FF++ is parted in various gerating methods and youtube real and actors real. hier wird angegeben welche davon
+     - `--compression`: The compression rate of the videos c0 (no compression) c23 (medium compression) c40(high compression)
 
-6. **Navigate to the notebook directory**:
-    ```sh
-    cd icpr2020dfdc/notebook
-    ```
-7. **Clone this repository**:
-    ```sh
-    git clone https://github.com/nikiwlan/BA-Deepfake-Detection-Utils.git
-    ```
-8. **Navigate to the icpr2020dfdc directory**:
-    ```sh
-    cd BA-Deepfake-Detection-Utils/icpr2020dfdc
+
     ```    
 
 ## Directory Structure
