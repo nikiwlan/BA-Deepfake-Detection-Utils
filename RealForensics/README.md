@@ -61,6 +61,8 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     - `--compression`: The compression rate of the videos (c0 = no compression, c23 = medium compression, c40 = high compression).
     - `--data_path`: Path to the dataset.
 
+2. **Download an Alogirthm to detect 68 Lanmakarks**:
+    I decided for the usage of ... 
    
 
 ## Directory Structure
