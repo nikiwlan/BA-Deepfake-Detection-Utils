@@ -24,3 +24,13 @@ All necessary scripts and documentation are included to replicate the evaluation
 
 - [FaceForensics++](https://github.com/ondyari/FaceForensics)
 - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics)
+
+Both RealForensics and LipForensics require preprocessed data. Instructions for preparing the data can be found in the [`Datasets/preprocess_datasets`](./Datasets/preprocess_datasets) directory
+
+## Purpose
+
+This repository is for the evaluation of three state-of-the-art deepfake detection models. It includes supplementary scripts used during the evaluation, as well as detailed instructions and documentation on the evaluation process as described in the thesis. This repository supports the reproduction of the model results of the thesis.
+
+## Contact
+
+If you have any questions or comments, please do not hesitate to contact me at [niklas.langes@hs-weingarten.de].
