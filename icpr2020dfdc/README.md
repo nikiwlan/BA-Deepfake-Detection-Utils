@@ -37,7 +37,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 3. **Install necessary packages**:
     ```sh
-    pip install torch numpy scipy argparse torchvision matplotlib
+    pip install torch numpy scipy argparse torchvision matplotlib scikit-learn
     ```
 
 4. **Clone the repository**:
