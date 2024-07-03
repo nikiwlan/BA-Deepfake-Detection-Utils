@@ -41,29 +41,11 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     conda activate el_dorado
     ```
 
-## Download and preprocess the datasets
+## Dataset Preprocessing
 
-1. **Download the datasets (Celeb-DF or FF++)**:
+The steps to preprocess the datasets are located in a different directory. Please follow the instructions provided in the following location:
 
-    - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics) (reduced to 500 real and 500 fake videos) 
-    - [FaceForensics++](https://github.com/ondyari/FaceForensics) (reduced to 600 real and 600 fake videos)
-
-2. **Install a necessary dependency for the script**:
-    ```sh    
-    pip install opencv-python
-    ```
-
-3. **Extract the single frames of the videos with the script within the dataset (e.g., FF++)**:
-    ```sh    
-    python3 extract_compressed_videos_FaceForensics.py --data_path [yourLocalPath]/RealForensics/data/Forensics --dataset all --compression c23
-    ```
-    - `--dataset`: Specify which part of FF++ (e.g., different generation methods, YouTube real, or actors real).
-    - `--compression`: The compression rate of the videos (c0 = no compression, c23 = medium compression, c40 = high compression).
-    - `--data_path`: Path to the dataset.
-
-2. **Download an Alogirthm to detect 68 Lanmakarks**:
-    I decided for the usage of ... 
-   
+[Preprocess Datasets](../Datasets/preprocess_datasets)
 
 ## Directory Structure
 
