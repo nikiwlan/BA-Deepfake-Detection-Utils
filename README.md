@@ -7,6 +7,7 @@ This repository contains supplementary scripts and documentation for the evaluat
 This repository provides a detailed overview of how the models were evaluated using different datasets. It includes step-by-step instructions on:
 
 - Downloading the models and datasets
+- Managing necessary dependencies
 - Preparing the data
 - Using the models
 - Adapting the scripts
