@@ -16,14 +16,14 @@ All necessary scripts and documentation are included to replicate the evaluation
 
 ## Models
 
-- **Model1**: [LipForensics](https://github.com/ahaliassos/LipForensics)
-- **Model2**: [icpr2020dfdc](https://github.com/polimi-ispl/icpr2020dfdc)
-- **Model3**: [RealForensics](https://github.com/ahaliassos/RealForensics)
+- [LipForensics](https://github.com/ahaliassos/LipForensics)
+- [icpr2020dfdc](https://github.com/polimi-ispl/icpr2020dfdc)
+- [RealForensics](https://github.com/ahaliassos/RealForensics)
 
 ## Datasets
 
-- **Dataset1**: [FaceForensics++](https://github.com/ondyari/FaceForensics)
-- **Dataset2**: [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics)
+- [FaceForensics++](https://github.com/ondyari/FaceForensics)
+- [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics)
 
 Natürlich, hier ist die aktualisierte README-Datei mit dem zusätzlichen Hinweis zur Datenvorbereitung:
 
