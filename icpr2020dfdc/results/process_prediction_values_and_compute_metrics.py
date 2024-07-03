@@ -4,6 +4,10 @@ from sklearn.metrics import precision_score, recall_score, f1_score, average_pre
 import os
 import argparse
 
+# Basisverzeichnis für die Vorhersagewerte relativ zum Skriptverzeichnis
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'process_data', 'prediction_values'))
+
 def read_predictions(file_path):
     predictions = []
     with open(file_path, 'r') as file:
@@ -17,7 +21,11 @@ def read_predictions(file_path):
                 print(f"Skipping line due to error: {line.strip()} -> {e}")
     return predictions
 
-def main(threshold, propThreshold, real_path, fake_path, dataset):
+def main(threshold, propThreshold, dataset):
+    # Setzen der vollständigen Pfade basierend auf dem Dataset-Namen
+    real_path = os.path.join(BASE_DIR, f'prediction_real_values_{dataset}.txt')
+    fake_path = os.path.join(BASE_DIR, f'prediction_fake_values_{dataset}.txt')
+
     real_scores = read_predictions(real_path)
     fake_scores = read_predictions(fake_path)
 
@@ -142,9 +150,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate predictions with different thresholds.")
     parser.add_argument('--threshold', type=float, required=True, help='Threshold value')
     parser.add_argument('--propThreshold', type=float, required=True, help='Proportional threshold value')
-    parser.add_argument('--real_path', type=str, required=True, help='Path to the file with real video predictions')
-    parser.add_argument('--fake_path', type=str, required=True, help='Path to the file with fake video predictions')
     parser.add_argument('--dataset', type=str, required=True, help='Name of the dataset (e.g., FF++, Celeb-DF)')
     args = parser.parse_args()
 
-    main(args.threshold, args.propThreshold, args.real_path, args.fake_path, args.dataset) 
+    main(args.threshold, args.propThreshold, args.dataset)
