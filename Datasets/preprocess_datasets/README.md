@@ -30,6 +30,7 @@ This directory contains scripts and instructions for preprocessing datasets for 
 ## Notes
 
 - **Dataset Reduction**:
+  
     - **Celeb-DF**: Is reduced to 500 real and 500 fake videos.
     - **FF++**: Is reduced to 600 real and 600 fake videos. Moreover, the generation methods are limited to Deepfakes, Face2Face, FaceSwap, and NeuralTextures.
 
