@@ -1,5 +1,3 @@
-# Datei: evaluate_predictions_with_metrics.py
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import precision_score, recall_score, f1_score, average_precision_score, roc_auc_score, roc_curve, auc
@@ -19,7 +17,7 @@ def read_predictions(file_path):
                 print(f"Skipping line due to error: {line.strip()} -> {e}")
     return predictions
 
-def main(threshold, propThreshold, real_path, fake_path):
+def main(threshold, propThreshold, real_path, fake_path, dataset):
     real_scores = read_predictions(real_path)
     fake_scores = read_predictions(fake_path)
 
@@ -99,12 +97,12 @@ def main(threshold, propThreshold, real_path, fake_path):
     roc_auc = auc(fpr, tpr)
 
     # Verzeichnis zum Speichern der Bilder
-    save_dir = '/media/niklas/T7/FaceForensics/EffnetEssemleResults/Screens'
-    os.makedirs(save_dir, exist_ok=True)
+    plot_dir = f'results/roc_plots/{dataset}'
+    os.makedirs(plot_dir, exist_ok=True)
     
     # Dateiname basierend auf Schwellenwerten
     filename = f'roc_curve_threshold_{threshold}_propThreshold_{propThreshold}.png'
-    filepath = os.path.join(save_dir, filename)
+    filepath = os.path.join(plot_dir, filename)
 
     # Zeichnen der AUC-Kurve und speichern als Bild
     plt.figure()
@@ -120,9 +118,9 @@ def main(threshold, propThreshold, real_path, fake_path):
     plt.close()
 
     # Speichern der Ergebnisse in eine Textdatei
-    results_dir = '/media/niklas/T7/FaceForensics/EffnetEssemleResults'
-    os.makedirs(results_dir, exist_ok=True)
-    results_file = os.path.join(results_dir, 'results.txt')
+    result_dir = 'results/metrics'
+    os.makedirs(result_dir, exist_ok=True)
+    results_file = os.path.join(result_dir, f'results_{dataset}.txt')
 
     with open(results_file, 'a') as f:  # 'a' für Anhängen
         f.write(f"Threshold: {threshold}, PropThreshold: {propThreshold}\n")
@@ -146,6 +144,7 @@ if __name__ == "__main__":
     parser.add_argument('--propThreshold', type=float, required=True, help='Proportional threshold value')
     parser.add_argument('--real_path', type=str, required=True, help='Path to the file with real video predictions')
     parser.add_argument('--fake_path', type=str, required=True, help='Path to the file with fake video predictions')
+    parser.add_argument('--dataset', type=str, required=True, help='Name of the dataset (e.g., FF++, Celeb-DF)')
     args = parser.parse_args()
 
-    main(args.threshold, args.propThreshold, args.real_path, args.fake_path)
+    main(args.threshold, args.propThreshold, args.real_path, args.fake_path, args.dataset) 
