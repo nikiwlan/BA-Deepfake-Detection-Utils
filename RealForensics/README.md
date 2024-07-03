@@ -61,8 +61,6 @@ Here, `{type}` can be one of the following:
 - FaceSwap
 - Face2Face
 - NeuralTextures
-- FaceShifter
-- DeeperForensics
 
 **Example** for FaceForensics++ Deepfakes:
 `data/Forensics/Deepfakes/c23/videos`
