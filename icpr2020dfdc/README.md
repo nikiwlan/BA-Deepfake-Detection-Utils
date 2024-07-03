@@ -86,16 +86,17 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 2. **Process Prediction Values and Compute Metrics**:
     ```sh
-    python3 results/process_prediction_values_and_compute_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions]
+    python3 results/process_prediction_values_and_compute_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions] --dataset [dataset_name]
     ```
     - `--threshold`: Threshold value.
     - `--propThreshold`: Probability threshold value.
     - `--real_path`: Path to the .txt file with real video predictions.
     - `--fake_path`: Path to the .txt file with fake video predictions.
+    - `--dataset FF++`: Specifies the dataset name, and is used to dynamically create and save the results and plots into corresponding directories based on this dataset name.
 
    **Example Command**
    ```sh
-   python3 results/process_prediction_values_and_compute_metrics.py --threshold 0 --propThreshold 0 --real_path prediction_real_values_ff++.txt --fake_path prediction_fake_values_ff++.txt
+   python3 results/process_prediction_values_and_compute_metrics.py --threshold 0 --propThreshold 0 --real_path prediction_real_values_ff++.txt --fake_path prediction_fake_values_ff++.txt     --dataset FF++
    ```
 
 3. **View Results**:
