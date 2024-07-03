@@ -45,7 +45,34 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 The steps to preprocess the datasets are located in a different directory. Please follow the instructions provided in the following location:
 
-[Preprocess Datasets](../Datasets/preprocess_datasets)
+[`Preprocess Datasets`](../Datasets/preprocess_datasets)
+
+After extracting the frames in the videos and detecting the landmarks the folders have to be placed as following:
+
+
+**video placement**
+
+Place the videos in the corresponding directories.
+For example, for datasets like FaceForensics++, FaceShifter, and DeeperForensics, use the following structure:
+
+`data/Forensics/{type}/c23/videos`
+
+Here, `{type}` can be one of the following:
+- Real
+- Deepfakes
+- FaceSwap
+- Face2Face
+- NeuralTextures
+- FaceShifter
+- DeeperForensics
+
+**Example**
+
+For FaceForensics++ Deepfakes:
+`data/Forensics/Deepfakes/c23/videos`
+
+
+
 
 ## Directory Structure
 
