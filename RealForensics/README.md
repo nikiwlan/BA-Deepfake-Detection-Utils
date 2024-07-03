@@ -45,11 +45,8 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
 1. **Download the datasets (Celeb-DF or FF++)**:
 
-    - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics)
-    - [FaceForensics++](https://github.com/ondyari/FaceForensics)
-    
-    - **Note: Celeb-DF was reduced to 500 real and 500 fake videos.**
-    - **Note: FF++ was reduced to 600 real and 600 fake videos.**
+    - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics) (reduced to 500 real and 500 fake videos) 
+    - [FaceForensics++](https://github.com/ondyari/FaceForensics) (reduced to 600 real and 600 fake videos)
 
 2. **Install a necessary dependency for the script**:
     ```sh    
