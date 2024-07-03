@@ -40,26 +40,31 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     ```sh
     conda activate el_dorado
     ```
-## Download and preprocess the datasets 
 
-1. **Download the Dataset (Celeb-DF or FF++)**:
-  
+## Download and preprocess the datasets
+
+1. **Download the datasets (Celeb-DF or FF++)**:
+
     - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics)
-    - [FaceForenscis++](https://github.com/ondyari/FaceForensics)
-   
-2. **Install a necessary dependenciy for the script**:
+    - [FaceForensics++](https://github.com/ondyari/FaceForensics)
+    
+    - **Note: Celeb-DF was reduced to 500 real and 500 fake videos.**
+    - **Note: FF++ was reduced to 600 real and 600 fake videos.**
+
+2. **Install a necessary dependency for the script**:
     ```sh    
     pip install opencv-python
     ```
-3. **Extract the single frames of the videos with the script within the dataset (e.g. FF++)**:
+
+3. **Extract the single frames of the videos with the script within the dataset (e.g., FF++)**:
     ```sh    
     python3 extract_compressed_videos_FaceForensics.py --data_path [yourLocalPath]/RealForensics/data/Forensics --dataset all --compression c23
     ```
-     - `--dataset`: FF++ is parted in various gerating methods and youtube real and actors real. hier wird angegeben welche davon
-     - `--compression`: The compression rate of the videos c0 (no compression) c23 (medium compression) c40(high compression)
+    - `--dataset`: Specify which part of FF++ (e.g., different generation methods, YouTube real, or actors real).
+    - `--compression`: The compression rate of the videos (c0 = no compression, c23 = medium compression, c40 = high compression).
+    - `--data_path`: Path to the dataset.
 
-
-    ```    
+   
 
 ## Directory Structure
 
