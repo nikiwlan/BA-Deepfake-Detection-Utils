@@ -17,7 +17,7 @@ All necessary scripts and documentation are included to replicate the evaluation
 
 ## Models
 
-The respective directories and github links of the evaluated Models with supplemanty scipts and a step by step instruction 
+The respective directories and GitHub links of the evaluated models, with supplementary scripts and step-by-step instructions:
 
 - [`LipForensics`](./LipForensics) TODO: bsp. A CNN based approach released in the year 2020  [git](https://github.com/ahaliassos/LipForensics)
 - [`icpr2020dfdc`](./icpr2020dfdc) [git](https://github.com/polimi-ispl/icpr2020dfdc)
