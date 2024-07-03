@@ -3,6 +3,26 @@
 This directory contains supplementary scripts and results for the evaluation of the icpr2020dfdc model. 
 The results presented in my bachelor thesis can be recreated or tested on additional datasets using the provided scripts.
 
+
+## Directory Structure
+
+- `process_data/`: Contains scripts for processing labeled .mp4 folders. There is also a sub-folder with predicted values for the FF++ and Celeb-DF datasets.
+  - `calculate_fake_pred_values.py`: Script to calculate prediction values for fake videos.
+  - `calculate_real_pred_values.py`: Script to calculate prediction values for real videos.
+  - `prediction_values/`: Contains real and fake prediction values for labeled datasets: FF++ and Celeb-DF.
+    - `prediction_fake_values_celeb-df.txt`: Prediction values for 500 fake videos from the Celeb-DF dataset.
+    - `prediction_fake_values_ff++`: Prediction values for 600 fake videos from the FaceForensics++ dataset.
+    - `prediction_real_values_celeb-df.txt`: Prediction values for 500 real videos from the Celeb-DF dataset.
+    - `prediction_real_values_ff++`: Prediction values for 600 real videos from the FaceForensics++ dataset.
+
+- `results/`: Contains results and metrics from the evaluation.
+  - `process_prediction_values_and_compute_metrics.py`: Script to process prediction values and compute evaluation metrics.
+  - `metrics/`: Contains detailed metrics for the evaluated models.
+    - `results.txt`: Text file with various metrics and details on different thresholds and probability thresholds.
+  - `roc_plots/`: Contains ROC curve plots on various thresholds and probability thresholds.
+    - Various ROC curve plots as .png files.
+   
+
 ## Setup
 
 1. **Create a virtual environment**:
@@ -43,24 +63,6 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     ```sh
     cd BA-Deepfake-Detection-Utils/icpr2020dfdc
     ```    
-
-## Directory Structure
-
-- `process_data/`: Contains scripts for processing labeled .mp4 folders. There is also a sub-folder with predicted values for the FF++ and Celeb-DF datasets.
-  - `calculate_fake_pred_values.py`: Script to calculate prediction values for fake videos.
-  - `calculate_real_pred_values.py`: Script to calculate prediction values for real videos.
-  - `prediction_values/`: Contains real and fake prediction values for labeled datasets: FF++ and Celeb-DF.
-    - `prediction_fake_values_celeb-df.txt`: Prediction values for 500 fake videos from the Celeb-DF dataset.
-    - `prediction_fake_values_ff++`: Prediction values for 600 fake videos from the FaceForensics++ dataset.
-    - `prediction_real_values_celeb-df.txt`: Prediction values for 500 real videos from the Celeb-DF dataset.
-    - `prediction_real_values_ff++`: Prediction values for 600 real videos from the FaceForensics++ dataset.
-
-- `results/`: Contains results and metrics from the evaluation.
-  - `process_prediction_values_and_compute_metrics.py`: Script to process prediction values and compute evaluation metrics.
-  - `metrics/`: Contains detailed metrics for the evaluated models.
-    - `results.txt`: Text file with various metrics and details on different thresholds and probability thresholds.
-  - `roc_plots/`: Contains ROC curve plots on various thresholds and probability thresholds.
-    - Various ROC curve plots as .png files.
 
 ## Usage
 
