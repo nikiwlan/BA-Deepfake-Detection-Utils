@@ -1,6 +1,6 @@
 # Preprocess Datasets
 
-This directory contains scripts and instructions for preprocessing datasets for the RealForensics project.
+This directory contains scripts and instructions for preprocessing datasets for the LipForenscis and RealForensics models.
 
 ## Steps to Preprocess Datasets
 
