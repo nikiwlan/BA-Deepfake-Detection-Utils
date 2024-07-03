@@ -56,7 +56,7 @@ All necessary scripts and documentation are included to replicate the evaluation
 - **Dataset1**: [FaceForensics++](https://github.com/ondyari/FaceForensics)
 - **Dataset2**: [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics)
 
-Both RealForensics and LipForensics require preprocessed data. Instructions for preparing the data can be found in the [`datasets/preprocess_data`](./datasets/preprocess_data) directory
+Both RealForensics and LipForensics require preprocessed data. Instructions for preparing the data can be found in the [`Datasets/preprocess_data`](./Datasets/preprocess_data) directory
 
 ## Purpose
 
