@@ -54,6 +54,7 @@ if args.dataset == 'FF++':
 elif args.dataset == 'Celeb-DF':
     real_dirs = [
         '/media/niklas/T7/CelebDF/Celeb-real'
+        '/media/niklas/T7/CelebDF/YouTube-real'
     ]
     prediction_file_real = 'prediction_real_values_celeb-df.txt'
 else:
