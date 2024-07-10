@@ -105,5 +105,8 @@ TODO : ## Usage
    - Download the [`pretrained_model`](https://drive.google.com/file/d/1nqEVlRN51WyzMWSeB7x9okcaegFgA-BQ/view) on google drive
 
 2. **Execute the Script to load the Pretrained Model and Compute Metrics**:
-   
+    ```sh
     python stage2/eval.py model.weights_filename=realforensics_ff.pth
+    ```
+   
+    - the supplemented script is available at `./load_pretrained_model_and_compute_metrics.py`
