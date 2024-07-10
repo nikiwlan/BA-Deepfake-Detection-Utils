@@ -14,8 +14,15 @@ This directory contains scripts and instructions for preprocessing datasets for 
     ```sh    
     pip install opencv-python
     ```
+## Notes
 
-**Celeb-DF**
+- **Dataset Reduction**:
+  
+    - **Celeb-DF**: Is reduced to 500 real and 500 fake videos.
+    - **FF++**: Is reduced to 600 real and 600 fake videos. Moreover, the generation methods are limited to Deepfakes, Face2Face, FaceSwap, and NeuralTextures. The original videos from actors and YouTube were combined into a single category called 'Real'.    
+
+
+**LipForensics**
 
 1. **Extract the video frames (TODO: only for Celeb-DF)**:
     ```sh    
@@ -27,24 +34,23 @@ This directory contains scripts and instructions for preprocessing datasets for 
 
 
 2. **Detect 68 Landmarks of the single Frames**:
-    I decided for the usage of ..
+    I decided for the usage of [face-alignement](https://github.com/1adrianb/face-alignment) to detect the landmarks of the single frames. The necessary script is on `detect68landmarks/detect_videos`.
 
-**FF++**
+2. **Execute the script to cropp the mouth region**
+   Das skript dafür wurde nicht angepasst und liegt im Repository des jeweiligen Models LipForensics oder RealForensics.
+
+4. **Execute the script to cropp the mouth region**
+
+**RealForensics**
 
 1. **Detect 68 Landmarks of the Videos**:
     I decided for the usage of [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos I added a additional script `detect68landmarks/detect_videos` and save all the video in one .npy file as required.
 
 2. **Execute the script to cropp the mouth region**
-   
-
-## Notes
-
-- **Dataset Reduction**:
-  
-    - **Celeb-DF**: Is reduced to 500 real and 500 fake videos.
-    - **FF++**: Is reduced to 600 real and 600 fake videos. Moreover, the generation methods are limited to Deepfakes, Face2Face, FaceSwap, and NeuralTextures. The original videos from actors and YouTube were combined into a single category called 'Real'.
+   Das skript dafür wurde nicht angepasst und liegt im Repository von RealForensics unter `preprocessing/extract_faces.py` .
 
 
 ## Directory Structure
 
 - `extract_frames/`: Contains scripts for extracting single frames from videos for each dataset.
+- `detect68landmarks/` Contains supplemente scripts for detect 68 landmarks within single frames and entire videos.
