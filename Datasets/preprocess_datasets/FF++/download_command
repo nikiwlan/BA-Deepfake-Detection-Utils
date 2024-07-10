@@ -1,0 +1,4 @@
+Dowload command for the script I used:
+    ```sh    
+    D:\FaceForensics\download-FaceForensics.py D:\FaceForensics\output --dataset all --compression c23 --type videos --num_videos 6 --server EU2
+    ```  
