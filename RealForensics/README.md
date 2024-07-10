@@ -104,38 +104,6 @@ TODO : ## Usage
 1. **Pretrained Model**
    - Download the [`pretrained_model`](https://drive.google.com/file/d/1nqEVlRN51WyzMWSeB7x9okcaegFgA-BQ/view) on google drive
 
-1. **Calculate Prediction Values**:
+2. **Execute the Script to Compute Metrics**:
    
-    - **Note: Adjust the paths of the datasets in the scripts!**
-      
-    - For fake videos:
-        ```sh
-        python3 process_data/calculate_fake_pred_values.py --dataset FF++
-        ```
-        - `--dataset`: Specifies the dataset to process. Use `FF++` or `Celeb-DF`.
-
-    - For real videos:
-        ```sh
-        python3 process_data/calculate_real_pred_values.py --dataset FF++
-        ```
-        - `--dataset`: Specifies the dataset to process. Use `FF++` or `Celeb-DF`.
-          
-    - **Note: The newly generated prediction values are created in the icpr2020dfdc root directory!**
-
-2. **Process Prediction Values and Compute Metrics**:
-    ```sh
-    python3 results/process_prediction_values_and_compute_metrics.py --threshold [value] --propThreshold [value] --real_path [path_to_real_predictions] --fake_path [path_to_fake_predictions]
-    ```
-    - `--threshold`: Threshold value.
-    - `--propThreshold`: Probability threshold value.
-    - `--real_path`: Path to the .txt file with real video predictions.
-    - `--fake_path`: Path to the .txt file with fake video predictions.
-
-   **Example Command**
-   ```sh
-   python3 results/process_prediction_values_and_compute_metrics.py --threshold 0 --propThreshold 0 --real_path prediction_real_values_ff++.txt --fake_path prediction_fake_values_ff++.txt
-   ```
-
-3. **View Results**:
-    - Evaluation metrics can be found in `results/metrics/results.txt`.
-    - ROC curve plots can be found in `results/roc_plots/`.
+    python stage2/eval.py model.weights_filename=realforensics_ff.pth
