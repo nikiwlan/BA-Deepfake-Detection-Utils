@@ -41,7 +41,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
     conda activate el_dorado
     ```
 
-## Dataset Preprocessing
+### Dataset Preprocessing
 
 The steps to preprocess the datasets are located in a different directory. Please follow the instructions provided in the following location:
 
@@ -49,7 +49,7 @@ The steps to preprocess the datasets are located in a different directory. Pleas
 
 After extracting the frames in the videos and detecting the landmarks the folders have to be placed as following:
 
-## Video Placement
+### Video Placement
 
 Place the videos in the corresponding directories. For example, for datasets like FaceForensics++, FaceShifter, and DeeperForensics, use the following structure:
 
@@ -65,7 +65,7 @@ Here, `{type}` can be one of the following:
 **Example** for FaceForensics++ Deepfakes:
 `data/Forensics/Deepfakes/c23/videos`
 
-## Facial Landmarks Placement
+### Facial Landmarks Placement
 
 Place the facial landmarks in the corresponding folders as `.npy` files. Use the same directory structure as for the videos, but replace `videos` with `landmarks`. Each landmark file should have the same name as its corresponding video, except that it ends in `.npy`.
 
