@@ -32,7 +32,7 @@ This directory contains scripts and instructions for preprocessing datasets for 
 **FF++**
 
 1. **Detect 68 Landmarks of the Videos**:
-    I decided for the usage of [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos I added a additional script `face-alignment_for_68_landmarks/` and save all the video in one .npy file as required.
+    I decided for the usage of [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos I added a additional script `detect68landmarks/detect_videos` and save all the video in one .npy file as required.
 
 2. **Execute the script to cropp the mouth region**
    
