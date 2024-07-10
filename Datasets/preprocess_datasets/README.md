@@ -87,40 +87,40 @@ data/datasets/CelebDF/{dataset_name}/landmarks/{video}/
 **RealForensics**
 
 1. **Detect 68 Landmarks of the Videos**:
-    I decided for the usage of [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos I added a additional script `detect68landmarks/detect_videos` and save all the video in one .npy file as required.
+    I decided to use [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos. I added an additional script `detect68landmarks/detect_videos` to save all the video landmarks in one .npy file as required.
 
-2. **Execute the script to cropp the mouth region**
-   Das skript dafür wurde nicht angepasst und liegt im Repository von RealForensics unter `preprocessing/extract_faces.py` .
+2. **Execute the script to crop the faces**
+   The script was not modified and is available in the RealForensics repository under `preprocessing/extract_faces.py`.
 
 
-4. **Diese Ordnerstrukur soll die landmarks, videos und cropped faces sein** 
-
-## FF++
+4. **Directory structure for landmarks, videos, and cropped faces:** 
 
 **Frames:** 
-data/{dataset_name}/{dataset_name}/{compression}/videos/
+data/{dataset_name}/{dataset_subset_name}/{compression}/videos/
   - 0000.png
   - 0001.png
   - ...
   - 0102.png
 
 **Landmarken:**  
-data/{dataset_name}/{dataset_name}/{compression}/landmarks/
+data/{dataset_name}/{dataset_subset_name}/{compression}/landmarks/
   - 0000.npy
   - 0001.npy
   - ...
   - 0102.npy
 
 **Cropped Faces:**  
-data/{dataset_name}/{dataset_name}/{compression}/cropped_faces/
+data/{dataset_name}/{dataset_subset_name}/{compression}/cropped_faces/
   - 0000.png
   - 0001.png
   - ...
   - 0102.png
 
-- `--dataset_name`: CelebDF or FF++
-- `--dataset_subset_name`: CelebDF: real or fake. FF++: fake (name of the generation method) or real 
+**CSV files with the labels:**  
+data/{dataset_name}/csv_files
 
+- `--dataset_name`: CelebDF or FF++
+- `--dataset_subset_name`: CelebDF: real or fake. FF++: fake (name of the generation method) or real
 
 ## Directory Structure
 
