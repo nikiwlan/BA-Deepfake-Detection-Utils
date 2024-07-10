@@ -74,12 +74,11 @@ Place the facial landmarks in the corresponding folders as `.npy` files. Use the
 
 In my case, the 68 landmarks are computed with face alignment.
 
-## Extracted Frames Placement
+## Cross-Dataset Evaluation 
+    ```sh
+    pip install hydra-core
+    ```
 
-The extracted frames from the videos are placed in the corresponding folders. Use the same directory structure as for the videos, but replace `videos` with `frames`. Each frame should be named sequentially.
-
-**Example** for FaceForensics++ Deepfakes frames:
-`data/Forensics/Deepfakes/c23/frames`
 
 
 ## Directory Structure
