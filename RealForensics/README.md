@@ -76,7 +76,7 @@ In my case, the 68 landmarks are computed with face alignment.
 
 ## Cross-Dataset Evaluation 
     ```sh
-    pip install hydra-core
+    pip install hydra-core pytorchvideo
     ```
 
 
