@@ -97,21 +97,21 @@ data/datasets/CelebDF/{dataset_name}/landmarks/{video}/
 
 ## FF++
 
-# Frames
+**Frames:** 
 data/{dataset_name}/{dataset_name}/{compression}/videos/
   - 0000.png
   - 0001.png
   - ...
   - 0102.png
 
-# Landmarken
+**Landmarken:**  
 data/{dataset_name}/{dataset_name}/{compression}/landmarks/
   - 0000.npy
   - 0001.npy
   - ...
   - 0102.npy
 
-# Cropped Faces 
+**Cropped Faces:**  
 data/{dataset_name}/{dataset_name}/{compression}/cropped_faces/
   - 0000.png
   - 0001.png
