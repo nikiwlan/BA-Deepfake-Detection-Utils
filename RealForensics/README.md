@@ -101,8 +101,8 @@ In my case, the 68 landmarks are computed with face alignment.
 
 TODO : ## Usage
 
-1. **Download the pretrained Model**
-   - [`pretrained_model`](https://drive.google.com/file/d/1nqEVlRN51WyzMWSeB7x9okcaegFgA-BQ/view)
+1. **Pretrained Model**
+   - Download the [`pretrained_model`](https://drive.google.com/file/d/1nqEVlRN51WyzMWSeB7x9okcaegFgA-BQ/view) on google drive
 
 1. **Calculate Prediction Values**:
    
