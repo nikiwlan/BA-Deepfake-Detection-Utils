@@ -15,7 +15,9 @@ This directory contains scripts and instructions for preprocessing datasets for 
     pip install opencv-python
     ```
 
-3. **Extract the video frames (For instance for FF++)**:
+**Celeb-DF**
+
+1. **Extract the video frames (TODO: only for Celeb-DF)**:
     ```sh    
     python3 extract_compressed_videos_FaceForensics.py --data_path [yourLocalPath]/RealForensics/data/Forensics --dataset all --compression c23
     ```
@@ -24,8 +26,16 @@ This directory contains scripts and instructions for preprocessing datasets for 
     - `--data_path`: Path to the dataset.
 
 
-4. **Download an Alogirthm to detect 68 Lanmakarks**:
+2. **Detect 68 Landmarks of the single Frames**:
     I decided for the usage of ..
+
+**FF++**
+
+1. **Detect 68 Landmarks of the Videos**:
+    I decided for the usage of [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos I added a additional script `face-alignment_for_68_landmarks/` and save all the video in one .npy file as required.
+
+2. **Execute the script to cropp the mouth region**
+   
 
 ## Notes
 
