@@ -6,7 +6,10 @@ This directory contains scripts and instructions for preprocessing datasets for 
 
 1. **Download the datasets (Celeb-DF or FF++)**:
 
-    - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics) 
+    - [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics)
+    ```sh    
+    D:\FaceForensics\download-FaceForensics.py D:\FaceForensics\output --dataset all --compression c23 --type videos --num_videos 6 --server EU2
+    ```  
     - [FaceForensics++](https://github.com/ondyari/FaceForensics) 
 
 
