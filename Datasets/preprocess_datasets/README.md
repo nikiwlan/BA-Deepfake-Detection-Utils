@@ -45,21 +45,21 @@ Benennung der Frames nach Forlaufenden nummern
 
 ## FF++:
 
-**Frames**  
+**Frames:**  
 data/Forensics/{dataset_name}/{compression}/videos/
   - 0000.png
   - 0001.png
   - ...
   - 0102.png
 
-**Landmarken**
+**Landmarken:**  
 data/Forensics/{dataset_name}/{compression}/landmarks/
   - 0000.npy
   - 0001.npy
   - ...
   - 0102.npy
 
-**Cropped Faces**
+**Cropped Faces:**  
 data/Forensics/{dataset_name}/{compression}/cropped_mouths/
   - 0000.png
   - 0001.png
@@ -69,14 +69,14 @@ data/Forensics/{dataset_name}/{compression}/cropped_mouths/
 
 ## Celeb-DF
 
-**Frames**
+**Frames:**  
 data/datasets/CelebDF/{dataset_name}/images/{video}/
   - 0000.png
   - 0001.png
   - ...
   - 0102.png
 
-**Landmarken**
+**Landmarken:**  
 data/datasets/CelebDF/{dataset_name}/landmarks/{video}/
   - 0000.npy
   - 0001.npy
