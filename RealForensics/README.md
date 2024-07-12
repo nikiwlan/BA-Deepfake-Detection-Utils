@@ -1,7 +1,6 @@
 # RealForensics
 
-This directory contains supplementary scripts and results for the evaluation of the icpr2020dfdc model. 
-The results presented in my bachelor thesis can be recreated or tested on additional datasets using the provided scripts.
+This directory contains additional scripts and step-by-step instructions for evaluating the RealForensics model.
 
 ## Setup
 
@@ -47,7 +46,6 @@ The steps to preprocess the datasets are located in a different directory. Pleas
 
 [`Preprocess Datasets`](../Datasets/preprocess_datasets)
 
-After extracting the frames in the videos and detecting the landmarks the folders have to be placed as following:
 
 ## Usage 
 
