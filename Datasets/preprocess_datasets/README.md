@@ -20,79 +20,13 @@ This directory contains scripts and instructions for preprocessing datasets for 
     - **Celeb-DF**: Is reduced to 500 real and 500 fake videos.
     - **FF++**: Is reduced to 600 real and 600 fake videos. Moreover, the generation methods are limited to Deepfakes, Face2Face, FaceSwap, and NeuralTextures. The original videos from actors and YouTube were combined into a single category called 'Real'.    
 
-
-**LipForensics**
-
-1. **Extract the video frames (for instace for FF++)**:
-    ```sh    
-    python3 extract_compressed_videos_FaceForensics.py --data_path [yourLocalPath]/RealForensics/data/Forensics --dataset all --compression c23
-    ```
-    - `--dataset`: Specify which part of FF++ (e.g., different generation methods, YouTube real, or actors real).
-    - `--compression`: The compression rate of the videos (c0 = no compression, c23 = medium compression, c40 = high compression).
-    - `--data_path`: Path to the dataset.
-
-Benennung der Frames nach Forlaufenden nummern
-
-
-2. **Detect 68 Landmarks of the single Frames**:
-    I decided for the usage of [face-alignement](https://github.com/1adrianb/face-alignment) to detect the landmarks of the single frames. The necessary script is on `detect68landmarks/detect_videos`.
-
-3. **Execute the script to cropp the mouth region**
-   Das skript dafür wurde nicht angepasst und liegt im Repository des jeweiligen Models LipForensics oder RealForensics.
-
-4. **Diese Ordnerstrukur soll die landmarks, videos und cropped faces sein** TODO!
-
-## FF++:
-
-**Frames:**  
-data/Forensics/{dataset_name}/{compression}/videos/
-  - 0000.png
-  - 0001.png
-  - ...
-  - 0102.png
-
-**Landmarken:**  
-data/Forensics/{dataset_name}/{compression}/landmarks/
-  - 0000.npy
-  - 0001.npy
-  - ...
-  - 0102.npy
-
-**Cropped Faces:**  
-data/Forensics/{dataset_name}/{compression}/cropped_mouths/
-  - 0000.png
-  - 0001.png
-  - ...
-  - 0102.png
-
-
-## Celeb-DF
-
-**Frames:**  
-data/datasets/CelebDF/{dataset_name}/images/{video}/
-  - 0000.png
-  - 0001.png
-  - ...
-  - 0102.png
-
-**Landmarken:**  
-data/datasets/CelebDF/{dataset_name}/landmarks/{video}/
-  - 0000.npy
-  - 0001.npy
-  - ...
-  - 0102.npy
-
     
 ### RealForensics
 
 1. **Detect 68 Landmarks of the Videos**:
     I decided to use [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos. I added an additional script `detect68landmarks/detect_videos` to save all the video landmarks in one .npy file as required.
 
-2. **Execute the script to crop the faces**
-   The script was not modified and is available in the RealForensics repository under `preprocessing/extract_faces.py`.
-
-
-4. **Directory structure for landmarks, videos, and cropped faces:** 
+3. **Directory structure for landmarks, videos, and cropped faces:** 
 
 **Frames:** 
 data/{dataset_name}/{dataset_subset_name}/{compression}/videos/
@@ -125,7 +59,10 @@ data/{dataset_name}/csv_files
 - `data/FF++/Deepfakes/c23/videos`
 - `data/FF++/Deepfakes/c23/landmarks`
 - `data/FF++/Deepfakes/c23/cropped_faces`
-  
+
+3. **Execute the script to crop the faces**
+   The script was not modified and is available in the RealForensics repository under `preprocessing/extract_faces.py`.
+
   
 ### LipForensics
 
@@ -173,6 +110,10 @@ data/{dataset_name}/csv_files
 - `Deepfakes/c23/landmarks/`
 - `Deepfakes/c23/cropped_mouths/`
 
+6. **Execute the script to crop the mouhts region**
+    ```sh    
+    python preprocessing/crop_mouths.py --dataset all
+    ```
 
 ## Directory Structure
 
