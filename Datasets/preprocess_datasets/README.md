@@ -119,9 +119,14 @@ data/{dataset_name}/{dataset_subset_name}/{compression}/cropped_faces/
 data/{dataset_name}/csv_files
 
 - `--dataset_name`: CelebDF or FF++
-- `--dataset_subset_name`: CelebDF: real or fake. FF++: fake (name of the generation method) or real
+- `--dataset_subset_name`: CelebDF: real or fake. FF++: fake (Deepfakes, Face2Face, etc. ) or real
 
-
+**Example:**
+- `data/FF++/Deepfakes/c23/videos`
+- `data/FF++/Deepfakes/c23/landmarks`
+- `data/FF++/Deepfakes/c23/cropped_faces`
+  
+  
 ### LipForensics
 
 1. **Extract Frames from Videos**:
@@ -159,16 +164,20 @@ data/{dataset_name}/csv_files
     - ...
     - 0102.png
 
-### Example Dataset Structure:
-- `{dataset_name}`: Deepfakes, Face2Face, etc.
+**Example Dataset Structure:**
+- `{dataset_name}`: FF++: Deepfakes, Face2Face, etc. | Celeb-DF: FakeCelebDF and RealCelebDF 
 - `{type}`: landmarks, images, or cropped_mouths
 
-### Example:
+**Example:**
 - `Deepfakes/c23/images/`
 - `Deepfakes/c23/landmarks/`
 - `Deepfakes/c23/cropped_mouths/`
 
+
 ## Directory Structure
 
-- `extract_frames/`: Contains scripts for extracting single frames from videos for each dataset.
-- `detect68landmarks/` Contains supplemente scripts for detect 68 landmarks within single frames and entire videos.
+- `extract_frames/`: Contains scripts for extracting individual frames from videos for each dataset.
+- `detect68landmarks/`: Contains supplementary scripts for detecting 68 landmarks within single frames and entire videos.
+- `additional_scripts/`: Contains supplementary scripts, such as those for adjusting directory and file names.
+- `FF++/`: Contains the download script for FF++ with the corresponding command.
+
