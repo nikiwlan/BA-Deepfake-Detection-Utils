@@ -24,7 +24,7 @@ This directory contains scripts and instructions for preprocessing datasets for 
 ### RealForensics
 
 1. **Detect 68 Landmarks of the Videos**:
-    I decided to use [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos. I added an additional script `detect68landmarks/detect_videos` to save all the video landmarks in one .npy file as required.
+    I decided to use [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos. I adapted the detect script for video landmarks detection, it can be found in `detect68landmarks/detect_videos`, made to save all video landmarks in a .npy file as needed.
 
 3. **Directory structure for landmarks, videos, and cropped faces:** 
 
@@ -70,7 +70,7 @@ data/{dataset_name}/csv_files
     Use the script `extract_frames.py` available in the LipForensics repository to extract frames from the videos. This script will save each frame as a .png file.
 
 2. **Detect 68 Landmarks of the Frames**:
-    After extracting the frames, use [face-alignment](https://github.com/1adrianb/face-alignment) to detect the landmarks for each frame. An additional script, `detect68landmarks/detect_videos`, can be used to save all the frame landmarks in .npy files.
+    After extracting the frames, use [face-alignment](https://github.com/1adrianb/face-alignment) to detect the landmarks for each frame. I adapted the detect script for landmarks detection, it can be found in `detect68landmarks/detect_videos`, made to save all image landmarks in a .npy file as needed.
 
 3. **Execute the Script to Crop the Mouths**:
     Use the script `preprocessing/extract_mouths.py` available in the LipForensics repository. This script will crop the mouth regions from the frames based on the detected landmarks.
