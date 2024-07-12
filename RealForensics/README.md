@@ -57,6 +57,7 @@ After extracting the frames in the videos and detecting the landmarks the folder
     ```
 2. **Pretrained Model**
    - Download the [`pretrained_model`](https://drive.google.com/file/d/1nqEVlRN51WyzMWSeB7x9okcaegFgA-BQ/view) on google drive
+   - Place it in the stage2/weights folder. 
 
 3. **Execute the Script to load the Pretrained Model and Compute Metrics**:
     ```sh
