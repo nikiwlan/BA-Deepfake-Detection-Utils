@@ -33,32 +33,32 @@ This directory contains scripts and instructions for preprocessing datasets for 
 
 2. **Directory structure for landmarks, videos, and cropped faces:** 
 
-**Frames:** 
-data/{dataset_name}/{dataset_subset_name}/{compression}/videos/
-  - 0000.png
-  - 0001.png
-  - ...
-  - 0102.png
+    **Frames:** 
+    data/{dataset_name}/{dataset_subset_name}/{compression}/videos/
+      - 0000.png
+      - 0001.png
+      - ...
+      - 0102.png
 
-**Landmarken:**  
-data/{dataset_name}/{dataset_subset_name}/{compression}/landmarks/
-  - 0000.npy
-  - 0001.npy
-  - ...
-  - 0102.npy
-
-**Cropped Faces:**  
-data/{dataset_name}/{dataset_subset_name}/{compression}/cropped_faces/
-  - 0000.png
-  - 0001.png
-  - ...
-  - 0102.png
-
-**CSV files with the labels:**  
-data/{dataset_name}/csv_files
-
-- `--dataset_name`: CelebDF or FF++
-- `--dataset_subset_name`: CelebDF: real or fake. FF++: fake (Deepfakes, Face2Face, etc. ) or real
+    **Landmarken:**  
+    data/{dataset_name}/{dataset_subset_name}/{compression}/landmarks/
+      - 0000.npy
+      - 0001.npy
+      - ...
+      - 0102.npy
+    
+    **Cropped Faces:**  
+    data/{dataset_name}/{dataset_subset_name}/{compression}/cropped_faces/
+      - 0000.png
+      - 0001.png
+      - ...
+      - 0102.png
+    
+    **CSV files with the labels:**  
+    data/{dataset_name}/csv_files
+    
+    - `--dataset_name`: CelebDF or FF++
+    - `--dataset_subset_name`: CelebDF: real or fake. FF++: fake (Deepfakes, Face2Face, etc. ) or real
 
 **Example:**
 - `data/FF++/Deepfakes/c23/videos`
@@ -111,7 +111,6 @@ data/{dataset_name}/csv_files
     - ...
     - 0102.png
 
-**Example Dataset Structure:**
 - `{dataset_name}`: FF++: Deepfakes, Face2Face, etc. | Celeb-DF: FakeCelebDF and RealCelebDF 
 - `{type}`: landmarks, images, or cropped_mouths
 
