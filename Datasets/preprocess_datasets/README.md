@@ -83,7 +83,7 @@ data/datasets/CelebDF/{dataset_name}/landmarks/{video}/
   - 0102.npy
 
     
-**RealForensics**
+### RealForensics
 
 1. **Detect 68 Landmarks of the Videos**:
     I decided to use [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos. I added an additional script `detect68landmarks/detect_videos` to save all the video landmarks in one .npy file as required.
@@ -120,6 +120,53 @@ data/{dataset_name}/csv_files
 
 - `--dataset_name`: CelebDF or FF++
 - `--dataset_subset_name`: CelebDF: real or fake. FF++: fake (name of the generation method) or real
+
+
+### LipForensics
+
+1. **Extract Frames from Videos**:
+    Use the script `extract_frames.py` available in the LipForensics repository to extract frames from the videos. This script will save each frame as a .png file.
+
+2. **Detect 68 Landmarks of the Frames**:
+    After extracting the frames, use [face-alignment](https://github.com/1adrianb/face-alignment) to detect the landmarks for each frame. An additional script, `detect68landmarks/detect_videos`, can be used to save all the frame landmarks in .npy files.
+
+3. **Execute the Script to Crop the Mouths**:
+    Use the script `preprocessing/extract_mouths.py` available in the LipForensics repository. This script will crop the mouth regions from the frames based on the detected landmarks.
+
+4. **Rename Directories and Files**:
+    After processing, you need to rename the directories and files to maintain a consistent structure. Use the script `./additional_scripts/rename_directories_and_files.py` to rename directories and files as required.
+
+5. **Directory Structure for Landmarks, Frames, and Cropped Mouths**:
+
+    **Frames:**  
+    `{dataset_name}/c23/images/`
+    - 0000.png
+    - 0001.png
+    - ...
+    - 0102.png
+
+    **Landmarks:**  
+    `{dataset_name}/c23/landmarks/`
+    - 0000.npy
+    - 0001.npy
+    - ...
+    - 0102.npy
+
+    **Cropped Mouths:**  
+    `{dataset_name}/c23/cropped_mouths/`
+    - 0000.png
+    - 0001.png
+    - ...
+    - 0102.png
+
+### Example Dataset Structure:
+- `{dataset_name}`: Deepfakes, Face2Face, etc.
+- `{type}`: landmarks, images, or cropped_mouths
+
+### Example:
+- `Deepfakes/c23/images/`
+- `Deepfakes/c23/landmarks/`
+- `Deepfakes/c23/cropped_mouths/`
 
 ## Directory Structure
 
