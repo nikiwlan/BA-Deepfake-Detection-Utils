@@ -24,9 +24,14 @@ This directory contains scripts and instructions for preprocessing datasets for 
 ### RealForensics
 
 1. **Detect 68 Landmarks of the Videos**:
-    I decided to use [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos. I adapted the detect script for video landmarks detection, it can be found in `detect68landmarks/detect_videos`, made to save all video landmarks in a .npy file as needed.
+    I decided to use [face-alignement](https://github.com/1adrianb/face-alignment) to detect landmarks of videos. I adapted the detect script for video landmarks detection, it can be found in `detect68landmarks/detect_video_landmarks`, made to save all video landmarks in a .npy file as needed.
 
-3. **Directory structure for landmarks, videos, and cropped faces:** 
+   **Example Usage**
+    ```sh    
+    python detect_video_landmarks.py --base_dir "D:\RealForensics\data" --dataset_name "Forensics" --subdataset_name "RealFF"
+    ```
+
+2. **Directory structure for landmarks, videos, and cropped faces:** 
 
 **Frames:** 
 data/{dataset_name}/{dataset_subset_name}/{compression}/videos/
@@ -70,7 +75,12 @@ data/{dataset_name}/csv_files
     Use the script `extract_frames.py` available in the LipForensics repository to extract frames from the videos. This script will save each frame as a .png file.
 
 2. **Detect 68 Landmarks of the Frames**:
-    After extracting the frames, use [face-alignment](https://github.com/1adrianb/face-alignment) to detect the landmarks for each frame. I adapted the detect script for landmarks detection, it can be found in `detect68landmarks/detect_videos`, made to save all image landmarks in a .npy file as needed.
+    After extracting the frames, use [face-alignment](https://github.com/1adrianb/face-alignment) to detect the landmarks for each frame. I adapted the detect script for landmarks detection, it can be found in `detect68landmarks/detect_image_landmarks`, made to save all image landmarks in a .npy file as needed.
+
+    **Example Usage**
+    ```sh    
+    python detect_image_landmarks.py --base_dir "D:\\LipForensics\\LipForensics\\data\\datasets" --dataset_name "Forensics" --subdataset_name "RealFF"
+    ```
 
 3. **Execute the Script to Crop the Mouths**:
     Use the script `preprocessing/extract_mouths.py` available in the LipForensics repository. This script will crop the mouth regions from the frames based on the detected landmarks.
