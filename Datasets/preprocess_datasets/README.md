@@ -85,7 +85,7 @@ This directory contains scripts and instructions for preprocessing datasets for 
     ```
 
 3. **Execute the Script to Crop the Mouths**:
-    Use the adjusted script `preprocessing/cropped_mouhts/crop_mouths.py`. This script will crop the mouth regions from the frames based on the detected landmarks.
+    Use the adjusted script `preprocessing/cropped/crop_mouths.py`. This script will crop the mouth regions from the frames based on the detected landmarks.
 
 4. **Rename Directories and Files**:
     After processing, you need to rename the directories and files to maintain a consistent structure. Use the script `./additional_scripts/rename_directories_and_files.py` to rename directories and files as required.
