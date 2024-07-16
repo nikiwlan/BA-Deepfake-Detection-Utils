@@ -33,8 +33,13 @@ The steps to preprocess the datasets are located in a different directory. Pleas
    - Place it in the models/weights folder. 
 
 2. **Execute the evlauate.py Script to load the Pretrained Model and Compute Metrics**:
-    ```sh
-    python evaluate.py --dataset Celeb-DF --weights_forgery ./models/weights/lipforensics_ff.pth
-    ```
    
     - the supplemented script is available at `./evaluate.py`
+      
+    ```sh
+    python evaluate.py --dataset FaceForensics++ --threshold 0 --probability_threshold 0 
+    ```
+    
+    - `--dataset`: Specifies the dataset to process. Use `FaceForensics++`, `Celeb-DF` or `CustomDataset`.
+    - `--threshold`: Adjusts the threshold. For example, with a value of 1, anything below 1 is considered negative and anything above is considered positive.
+    - `--probability_threshold`: Ignores values within a range. For example, with a value of 1, all values between -1 and 1 are ignored (no prediction).
