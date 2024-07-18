@@ -41,6 +41,7 @@ def main(dataset):
     # Initialize FaceExtractor
     face_extractor = FaceExtractor(video_read_fn, facedet=facedet)
 
+    # Determine directories and prediction file based on dataset
     if dataset == 'FF++':
         fake_dirs = [
             '/media/niklas/T7/FaceForensics/data/manipulated_sequences/Deepfakes',
@@ -54,8 +55,22 @@ def main(dataset):
             '/media/niklas/T7/CelebDF/Celeb-synthesis'
         ]
         prediction_file_fake = 'prediction_fake_values_celeb-df.txt'
+    elif dataset == 'CustomDataset':
+        fake_dirs = [
+            '/media/niklas/T7/CustomDataset/Fake'
+        ]
+        prediction_file_fake = 'prediction_fake_values_custom.txt'
     else:
-        raise ValueError("Invalid dataset specified. Choose either 'FF++' or 'Celeb-DF'.")
+        raise ValueError("Invalid dataset specified. Choose either 'FF++', 'Celeb-DF', or 'CustomDataset'.")
+
+    # Ensure the prediction file exists
+    prediction_dir = '/home/niklas/icpr2020dfdc/notebook/BA-Deepfake-Detection-Utils/icpr2020dfdc/process_data/prediction_values'
+    if not os.path.exists(prediction_dir):
+        os.makedirs(prediction_dir)
+    
+    prediction_file_path = os.path.join(prediction_dir, prediction_file_fake)
+    if not os.path.exists(prediction_file_path):
+        open(prediction_file_path, 'w').close()
 
     # Helper function to get video paths from directories
     def get_video_paths(directories):
@@ -89,7 +104,7 @@ def main(dataset):
 
         average_fake_scores = [np.mean(scores) for scores in faces_pred_fake_all]
 
-        with open(prediction_file_fake, 'a') as f:
+        with open(prediction_file_path, 'a') as f:
             f.write(f'Average score for FAKE video: {average_fake_scores}\n')
 
         faces_pred_fake = []
@@ -100,7 +115,7 @@ def main(dataset):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate predictions for fake videos.")
-    parser.add_argument('--dataset', type=str, required=True, help='Dataset to process: FF++ or Celeb-DF')
+    parser.add_argument('--dataset', type=str, required=True, help='Dataset to process: FF++, Celeb-DF or CustomDataset')
     args = parser.parse_args()
 
     main(args.dataset)
