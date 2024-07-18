@@ -95,7 +95,7 @@ The results presented in my bachelor thesis can be recreated or tested on additi
 
    **Example Command**
    ```sh
-   python results/process_prediction_values_and_compute_metrics.py --threshold 0.5 --propThreshold 0.1 --dataset ff++
+   python results/process_prediction_values_and_compute_metrics.py --threshold 0.5 --propThreshold 0.1 --dataset FF++
    ```
 
 3. **View Results**:
